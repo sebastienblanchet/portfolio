@@ -7,10 +7,11 @@ branches:
   only:
   - master
 
-script: 
-#- ng test --watch false -cc
-# - ng e2e
-  - ng build --prod --base-href="https://sebastienblanchet.github.io/portfolio"
+script:
+  # - ng test --watch false -cc
+  # - ng e2e
+  # - ng build --prod --base-href="https://sebastienblanchet.github.io/portfolio"
+  vue-cli-service build
 
 deploy:
   provider: pages
