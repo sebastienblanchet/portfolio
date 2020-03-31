@@ -1,6 +1,12 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sebastienblanchet/portfolio",
+  "author": {
+    "name": "Sebastien Blanchet",
+    "email": "s3blanch@edu.uwaterloo.ca",
+    "url": "https://github.com/sebastienblanchet"
+  },
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -41,17 +47,15 @@
       "parser": "babel-eslint"
     },
     "rules": {},
-    "overrides": [
-      {
-        "files": [
-          "**/__tests__/*.{j,t}s?(x)",
-          "**/tests/unit/**/*.spec.{j,t}s?(x)"
-        ],
-        "env": {
-          "mocha": true
-        }
+    "overrides": [{
+      "files": [
+        "**/__tests__/*.{j,t}s?(x)",
+        "**/tests/unit/**/*.spec.{j,t}s?(x)"
+      ],
+      "env": {
+        "mocha": true
       }
-    ]
+    }]
   },
   "browserslist": [
     "> 1%",
