@@ -1,5 +1,10 @@
-# Portfolio
+# portfolio
 
-[![Build Status](https://travis-ci.com/sebastienblanchet/portfolio.svg?branch=master)](https://travis-ci.com/sebastienblanchet/portfolio)
+### Sebastien Blanchet
 
-Use vue
+## Build
+
+```bash
+npm install
+npm run serve
+```
