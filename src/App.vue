@@ -9,6 +9,7 @@
       <Section str="Timeline" />
       <Section str="Skills" />
       <Section str="Projects" />
+      <Section str="Info" />
     </v-content>
 
     <Footer />

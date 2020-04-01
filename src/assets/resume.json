@@ -55,7 +55,9 @@
       "Python",
       "Ruby",
       "PHP",
-      "MATLAB"
+      "MATLAB",
+      "HTML5",
+      "CSS3"
     ],
     "frameworks": [
       "Angular",
@@ -75,13 +77,14 @@
       "Vuetify"
     ],
     "hardware": [
+      "NI",
       "ARM",
       "Texas Instrument",
       "Arduino",
       "Raspberry Pi",
+      "Xilinx",
       "FPGA",
-      "VHDL",
-      "Xilinx Vivado"
+      "VHDL"
     ],
     "simulation": [
       "LabVIEW - FPGA / RT",
@@ -123,7 +126,7 @@
     "devops": [
       "Git Bash",
       "Jenkins",
-      "Travis - CI",
+      "Travis-CI",
       "Atlassian",
       "Trac",
       "Coverity",
@@ -143,11 +146,12 @@
       "Git",
       "Bash",
       "Vim",
-      "HTML5",
-      "CSS3",
       "JSON",
       "LaTeX",
-      "Markdown"
+      "Markdown",
+      "npm",
+      "Jenkins",
+      "Travis-CI"
     ]
   },
   "education": [{

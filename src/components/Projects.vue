@@ -12,12 +12,6 @@ export default {
   data: () => ({
     projects: projects
   }),
-  methods: {
-    getImg(str) {
-      const path = `@/assets/img/${str}.png`;
-      require(path);
-      return path;
-    }
-  }
+  methods: {}
 };
 </script>

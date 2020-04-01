@@ -16,7 +16,7 @@
     "Rails": "https://cdn.worldvectorlogo.com/logos/rails-1.svg",
     "Laravel": "https://cdn.worldvectorlogo.com/logos/laravel.svg",
     "React": "https://cdn.worldvectorlogo.com/logos/react.svg",
-    "Boostrap": "https://cdn.worldvectorlogo.com/logos/boostrap-4.svg",
+    "Boostrap": "https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg",
     "jQuery": "https://cdn.worldvectorlogo.com/logos/jquery-1.svg",
     "MySQL": "https://cdn.worldvectorlogo.com/logos/mysql.svg",
     "MongoDB": "https://cdn.worldvectorlogo.com/logos/mongodb.svg",
@@ -32,6 +32,18 @@
     "LaTeX": "https://cdn.worldvectorlogo.com/logos/latex.svg",
     "Markdown": "https://cdn.worldvectorlogo.com/logos/markdown.svg",
     "Jenkins": "https://cdn.worldvectorlogo.com/logos/jenkins.svg",
-    "Travis - CI": "https://cdn.worldvectorlogo.com/logos/travis.svg"
+    "Travis-CI": "https://cdn.worldvectorlogo.com/logos/travis-ci.svg",
+    "npm": "https://cdn.worldvectorlogo.com/logos/npm.svg",
+    "ARM": "https://cdn.worldvectorlogo.com/logos/arm.svg",
+    "Texas Instrument": "https://cdn.worldvectorlogo.com/logos/texas-instruments-1.svg",
+    "Arduino": "https://cdn.worldvectorlogo.com/logos/arduino.svg",
+    "Raspberry Pi": "https://cdn.worldvectorlogo.com/logos/raspberry-pi.svg",
+    "Xilinx": "https://cdn.worldvectorlogo.com/logos/xilinx.svg",
+    "Windows": "https://cdn.worldvectorlogo.com/logos/microsoft-windows-22.svg",
+    "macOS": "https://cdn.worldvectorlogo.com/logos/macos.svg",
+    "Linux": "https://cdn.worldvectorlogo.com/logos/linux-tux.svg",
+    "CentOS": "https://cdn.worldvectorlogo.com/logos/centos.svg",
+    "RHEL": "https://cdn.worldvectorlogo.com/logos/red-hat.svg",
+    "NI": "https://cdn.worldvectorlogo.com/logos/national-instruments.svg"
   }
 }

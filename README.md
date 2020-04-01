@@ -1,10 +1,10 @@
-# Portfolio
+## Portfolio
 
-[![Build Status](https://travis-ci.com/sebastienblanchet/portfolio.svg?branch=master)](https://travis-ci.com/sebastienblanchet/portfolio)
+[![Build Status](https://travis-ci.org/sebastienblanchet/portfolio.svg?branch=master)](https://travis-ci.org/sebastienblanchet/portfolio)
 
 #### Sebastien Blanchet
 
-Running [live](https://sebastienblanchet.github.io/portfolio/)!
+Running [live here!](https://sebastienblanchet.github.io/portfolio/)
 
 ## Build
 
@@ -16,6 +16,7 @@ npm run serve
 ```
 
 For prod, using a server of your choice:
+
 ```bash
 npm run build
 serve dist
@@ -23,7 +24,7 @@ serve dist
 
 ## Deploy
 
-Configuration with `.travis.yml` with automatically deploy each commit to *master* to GitHub pages.
+Configuration of  `.travis.yml` will automatically deploy each commit to *master* to GitHub pages.
 
 <!-- TODO:
 * Resolve all company images

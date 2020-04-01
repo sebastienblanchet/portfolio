@@ -20,6 +20,7 @@ import Interests from "@/components/Interests";
 import Timeline from "@/components/Timeline";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
+import Info from "@/components/Info";
 
 export default {
   components: {
@@ -27,7 +28,8 @@ export default {
     Interests,
     Timeline,
     Skills,
-    Projects
+    Projects,
+    Info
   },
   data: () => ({
     panel: [0, 1],
@@ -36,7 +38,8 @@ export default {
       Interests: Interests,
       Timeline: Timeline,
       Skills: Skills,
-      Projects: Projects
+      Projects: Projects,
+      Info: Info
     }
   }),
   props: {
