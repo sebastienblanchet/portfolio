@@ -1,7 +1,11 @@
 <template>
   <v-footer app>
     <v-row>
-      <v-col cols="auto">{{ new Date().getFullYear() }} v{{version}} {{author.name}}</v-col>
+      <v-col cols="auto">{{author.name}}</v-col>
+      <v-spacer></v-spacer>
+      <v-col cols="auto">
+        <b>{{ new Date().getFullYear() }} - v{{version}}</b>
+      </v-col>
       <v-spacer></v-spacer>
       <v-col cols="auto">
         <v-btn class="dark icon" text small>

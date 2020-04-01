@@ -3,8 +3,8 @@
     <v-timeline>
       <v-timeline-item v-for="job in resume.work" :key="job.title" large>
         <template v-slot:icon>
-          <v-avatar color="white">
-            <v-img :src="require('@/assets/img/' + job.id + '.png')"></v-img>
+          <v-avatar>
+            <img v-bind:src="getImg(job.id)" />
           </v-avatar>
         </template>
         <template v-slot:opposite>
@@ -30,7 +30,8 @@ export default {
   }),
   methods: {
     getImg(str) {
-      const path = `'@/assets/img/${str}.png'`;
+      const path = `@/assets/img/${str}.png`;
+      require(path);
       return path;
     }
   }

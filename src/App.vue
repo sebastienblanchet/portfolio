@@ -3,7 +3,7 @@
     <Navbar />
 
     <v-content>
-      <!-- for lets make this single page -->
+      <!-- for now lets make this single page -->
       <Section str="About" />
       <Section str="Timeline" />
     </v-content>
