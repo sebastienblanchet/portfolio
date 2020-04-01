@@ -18,13 +18,16 @@
 import About from "@/components/About";
 import Interests from "@/components/Interests";
 import Timeline from "@/components/Timeline";
+import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 
 export default {
   components: {
     About,
     Interests,
-    Timeline
+    Timeline,
+    Skills,
+    Projects
   },
   data: () => ({
     panel: [0, 1],
@@ -32,6 +35,7 @@ export default {
       About: About,
       Interests: Interests,
       Timeline: Timeline,
+      Skills: Skills,
       Projects: Projects
     }
   }),
@@ -41,19 +45,6 @@ export default {
   computed: {
     component: function() {
       return this.dict[this.str];
-      // TODO make this a dictionary intead
-      // switch (this.str) {
-      //   case "About":
-      //     return About;
-      //   case "Interests":
-      //     return Interests;
-      //   case "Timeline":
-      //     return Timeline;
-      //   case "Projects":
-      //     return Projects;
-      //   default:
-      //     return null;
-      // }
     }
   },
   methods: {

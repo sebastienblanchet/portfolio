@@ -46,7 +46,7 @@
     }
   ],
   "skills": {
-    "Programming": [
+    "programming": [
       "C",
       "C++",
       "C#",
@@ -57,7 +57,7 @@
       "PHP",
       "MATLAB"
     ],
-    "Frameworks": [
+    "frameworks": [
       "Angular",
       "Vue.js",
       "Node.js",
@@ -65,7 +65,7 @@
       "Rails",
       "Laravel"
     ],
-    "Libraries": [
+    "libraries": [
       "React",
       "Boostrap",
       "jQuery",
@@ -74,7 +74,7 @@
       "Express",
       "Vuetify"
     ],
-    "Hardware": [
+    "hardware": [
       "ARM",
       "Texas Instrument",
       "Arduino",
@@ -83,7 +83,7 @@
       "VHDL",
       "Xilinx Vivado"
     ],
-    "Simulation": [
+    "simulation": [
       "LabVIEW - FPGA / RT",
       "Simulink",
       "OPAL - RT",
@@ -92,7 +92,7 @@
       "SOLIDWORKS",
       "ANSYS"
     ],
-    "OS": [
+    "os": [
       "Windows",
       "macOS",
       "Linux",
@@ -105,7 +105,7 @@
       "QNX",
       "UNIX"
     ],
-    "Protocols": [
+    "protocols": [
       "TCP / IP",
       "UDP",
       "ARINC",
@@ -120,7 +120,7 @@
       "RS422",
       "FTP"
     ],
-    "DevOps": [
+    "devops": [
       "Git Bash",
       "Jenkins",
       "Travis - CI",
@@ -129,7 +129,7 @@
       "Coverity",
       "OpenShift(containerization)"
     ],
-    "Concepts": [
+    "concepts": [
       "embedded discrete and optimal control",
       "PID",
       "DSP",
@@ -139,13 +139,13 @@
       "DSA",
       "CI / CD"
     ],
-    "Other": [
+    "other": [
+      "Git",
       "Bash",
       "Vim",
       "HTML5",
       "CSS3",
       "JSON",
-      "XML",
       "LaTeX",
       "Markdown"
     ]
@@ -366,7 +366,6 @@
         "Led electrical system efforts including harnessing/debugging and temperature/motor controls in C on MCU"
       ]
     },
-
     {
       "title": "Swift App Training",
       "employer": "Apple: Software University",
@@ -375,7 +374,6 @@
         "Reviewed the fundamentals of object oriented programming in Swift and coded an application"
       ]
     },
-
     {
       "title": "MIT Open Courseware Self-Study",
       "employer": "6.006 Introduction to Algorithms",
