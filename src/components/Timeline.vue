@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Experience</h1>
     <v-timeline>
       <v-timeline-item v-for="job in resume.work" :key="job.title" large>
         <template v-slot:icon>
