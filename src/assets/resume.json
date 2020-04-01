@@ -5,7 +5,7 @@
     "email": "s3blanch@edu.uwaterloo.ca",
     "li": "https://www.linkedin.com/in/sebastien-blanchet/",
     "git": "https://github.com/sebastienblanchet",
-    "stack": "https://github.com/sebastienblanchet",
+    "stack": "https://stackoverflow.com/users/9791070/seb-blanchet",
     "summary": "Software engineer"
   },
   "interests": [{
@@ -168,7 +168,7 @@
       "start": "Oct. 2019"
     }
   ],
-  "work": [{
+  "jobs": [{
       "id": "pwc",
       "url": "http: //www.pwc.ca",
       "employer": "Pratt & Whitney Canada",
@@ -193,7 +193,8 @@
         "HTML5/CSS3",
         "MongoDB",
         "MySQL",
-        "Linux"
+        "Linux",
+        "Git"
       ]
     },
     {
@@ -212,10 +213,16 @@
         "Employed a test-driven development mindset by writing C unit tests, SIL/HIL simulations, Pytest regression ",
         "Assured CI in an Agile environment with Atlassian tools, Git Bash, code review/PR and Jenkins builds",
         "Employing SCRUM software development with Atlassian tools, Git Bash, code review",
-        "Coding layered architecture CAN and UDS communication protocols for diagnostics and data transfer between ECUs",
+        "Coding layered architecture CAN, UDS, UDP communication protocols for diagnostics and data transfer between ECUs",
         "Implementing power electronics control algorithms for industrial inverter, rectifiers"
       ],
-      "technologies": []
+      "technologies": [
+        "C",
+        "C++",
+        "Python",
+        "HIL",
+        "Git"
+      ]
     },
     {
       "id": "apple",
@@ -239,7 +246,15 @@
         "Hardware communication protocols interfaces serial, ethernet, SPI PCIe, I2C, UART, JTAG",
         "Acquire and generate analog and digital signals, control timing, and implement signal processing on RT and FPGA parallel processing"
       ],
-      "technologies": []
+      "technologies": [
+        "C",
+        "C++",
+        "LabVIEW",
+        "MATLAB",
+        "Simulink",
+        "FPGA",
+        "Git"
+      ]
     },
     {
       "id": "altaeros",
@@ -255,7 +270,11 @@
         "Utilized electronic lab equipment and LabVIEW HMI to log test data and analyze with MATLAB",
         "Coordinated with vendors and ControlEng SERVOsoft to size all control system components (servos, VFDs)"
       ],
-      "technologies": []
+      "technologies": [
+        "Python",
+        "MATLAB",
+        "LabVIEW"
+      ]
     },
     {
       "id": "odi",
@@ -272,7 +291,10 @@
         "Automated tedious SOLIDWORKS tasks in VBA and C++ with the API in MS Visual Studio IDE",
         "Performed hands-on Q&A HMI testing, machined components, fabricated assemblies with power/hand tools"
       ],
-      "technologies": []
+      "technologies": [
+        "SOLIDWORKS",
+        "C++"
+      ]
     },
     {
       "id": "pwc",

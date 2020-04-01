@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-timeline>
-      <v-timeline-item v-for="job in resume.work" :key="job.title" large>
+      <v-timeline-item v-for="job in jobs" :key="job.title" large>
         <template v-slot:icon>
           <v-avatar color="white">
             <v-img :src="require('@/assets/img/' + job.id + '.png')"></v-img>
@@ -23,6 +23,7 @@
             {{job.employer}}
           </v-card-title>
           <v-card-text>{{job.division}}</v-card-text>
+          <v-card-text>{{job.technologies | arr2Csv}}</v-card-text>
           <!-- TODO click for more -->
         </v-card>
       </v-timeline-item>
@@ -31,11 +32,11 @@
 </template>
 
 <script>
-import res from "@/assets/resume.json";
+import { jobs } from "@/assets/resume.json";
 
 export default {
   data: () => ({
-    resume: res
+    jobs: jobs
   }),
   methods: {
     getImg(str) {

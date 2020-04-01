@@ -7,6 +7,7 @@
       <Section str="About" />
       <Section str="Interests" />
       <Section str="Timeline" />
+      <Section str="Projects" />
     </v-content>
 
     <Footer />

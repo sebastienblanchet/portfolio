@@ -9,6 +9,7 @@
         <SidebarItem icon="mdi-school-outline" section="Education" />
         <!-- <SidebarItem icon="mdi-briefcase-account-outline" section="Experience" /> -->
         <SidebarItem icon="mdi-code-braces" section="Projects" />
+        <SidebarItem icon="mdi-information-outline" section="Info" />
       </v-list>
     </v-navigation-drawer>
 

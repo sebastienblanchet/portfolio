@@ -5,8 +5,8 @@
       <v-spacer></v-spacer>
       <v-col cols="auto">
         <b>
-          {{ new Date().getFullYear() }} - v{{version}} built with
           <v-icon size="24px">mdi-vuejs</v-icon>
+          {{ new Date().getFullYear() }} - v{{version}}
         </b>
       </v-col>
       <v-spacer></v-spacer>
