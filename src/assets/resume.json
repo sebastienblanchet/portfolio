@@ -1,10 +1,49 @@
 {
-  "interests": [
-    "hockey",
-    "golf",
-    "biking",
-    "DIY electronics",
-    "snowmobiling"
+  "about": {
+    "name": "Sebastien Blanchet",
+    "location": "Montreal, QC, CAN",
+    "email": "s3blanch@edu.uwaterloo.ca",
+    "li": "https://www.linkedin.com/in/sebastien-blanchet/",
+    "git": "https://github.com/sebastienblanchet",
+    "stack": "https://github.com/sebastienblanchet",
+    "summary": "Software engineer"
+  },
+  "interests": [{
+      "icon": "mdi-coffee-maker",
+      "activity": "coffee"
+    },
+    {
+      "icon": "mdi-file-code-outline",
+      "activity": "coding"
+    },
+    {
+      "icon": "mdi-hockey-puck",
+      "activity": "hockey"
+    },
+    {
+      "icon": "mdi-football",
+      "activity": "football"
+    },
+    {
+      "icon": "mdi-golf",
+      "activity": "golf"
+    },
+    {
+      "icon": "mdi-bike",
+      "activity": "biking"
+    },
+    {
+      "icon": "mdi-pulse",
+      "activity": "DIY electronics"
+    },
+    {
+      "icon": "mdi-engine",
+      "activity": "Mechanics"
+    },
+    {
+      "icon": "mdi-microsoft-xbox-controller",
+      "activity": "gaming"
+    }
   ],
   "skills": {
     "Programming": [

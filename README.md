@@ -2,9 +2,9 @@
 
 [![Build Status](https://travis-ci.com/sebastienblanchet/portfolio.svg?branch=master)](https://travis-ci.com/sebastienblanchet/portfolio)
 
-### Sebastien Blanchet
+#### Sebastien Blanchet
 
-Running [live](https://sebastienblanchet.github.io/portfolio/)
+Running [live](https://sebastienblanchet.github.io/portfolio/)!
 
 ## Build
 
@@ -15,7 +15,7 @@ npm install
 npm run serve
 ```
 
-For prod:
+For prod, using a server of your choice:
 ```bash
 npm run build
 serve dist
@@ -24,3 +24,9 @@ serve dist
 ## Deploy
 
 Configuration with `.travis.yml` with automatically deploy each commit to *master* to GitHub pages.
+
+<!-- TODO:
+* Resolve all company images
+* Verify icons
+* Colors
+ -->

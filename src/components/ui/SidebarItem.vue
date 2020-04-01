@@ -1,6 +1,6 @@
 <template>
   <!-- link v-bind:href="url"  -->
-  <v-list-item :click="scrollTo()">
+  <v-list-item @click="scrollTo()">
     <v-list-item-action>
       <v-icon v-text="icon"></v-icon>
     </v-list-item-action>

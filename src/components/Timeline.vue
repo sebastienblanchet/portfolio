@@ -9,12 +9,21 @@
         </template>
         <template v-slot:opposite>
           <span>
+            <v-icon>mdi-calendar</v-icon>
             <i>{{job.start}} - {{job.end}}</i>
+            <br />
+            <v-icon>mdi-map-marker</v-icon>
+            {{job.location }}
           </span>
         </template>
         <v-card class="elevation-2">
-          <v-card-title class="headline">{{job.title}}</v-card-title>
+          <v-card-title class="headline">
+            {{job.title}}
+            <br />
+            {{job.employer}}
+          </v-card-title>
           <v-card-text>{{job.division}}</v-card-text>
+          <!-- TODO click for more -->
         </v-card>
       </v-timeline-item>
     </v-timeline>

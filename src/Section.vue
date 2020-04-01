@@ -16,25 +16,31 @@
 
 <script>
 import About from "@/components/About";
+import Interests from "@/components/Interests";
 import Timeline from "@/components/Timeline";
 import Projects from "@/components/Projects";
 
 export default {
   components: {
     About,
+    Interests,
     Timeline
   },
   data: () => ({
-    panel: [0, 1]
+    panel: [0, 1],
+    dict: {}
   }),
   props: {
     str: String
   },
   computed: {
     component: function() {
+      // TODO make this a dictionary intead
       switch (this.str) {
         case "About":
           return About;
+        case "Interests":
+          return Interests;
         case "Timeline":
           return Timeline;
         case "Projects":
@@ -44,6 +50,14 @@ export default {
       }
     }
   },
-  methods: {}
+  methods: {
+    // scroll to anchor.....
+    // https://stackoverflow.com/questions/42645964/vue-js-anchor-to-div-within-the-same-component
+    scrollMeTo(refName) {
+      var element = this.$refs[refName];
+      var top = element.offsetTop;
+      window.scrollTo(0, top);
+    }
+  }
 };
 </script>
