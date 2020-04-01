@@ -5,7 +5,11 @@
     <v-content>
       <!-- for now lets make this single page -->
       <Section str="About" />
+      <Section str="Interests" />
       <Section str="Timeline" />
+      <Section str="Skills" />
+      <Section str="Projects" />
+      <Section str="Info" />
     </v-content>
 
     <Footer />
