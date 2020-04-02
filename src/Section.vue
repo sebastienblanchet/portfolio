@@ -1,9 +1,9 @@
 <template>
   <!-- wrapper class to apply same container themes-->
   <v-container fluid>
-    <v-expansion-panels v-model="panel" multiple>
+    <v-expansion-panels v-model="panel" multiple :id="str" :ref="str">
       <v-expansion-panel>
-        <v-expansion-panel-header class="headline" :ref="str">
+        <v-expansion-panel-header class="headline">
           <b>{{str}}</b>
         </v-expansion-panel-header>
         <v-expansion-panel-content>

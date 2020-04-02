@@ -25,9 +25,3 @@ serve dist
 ## Deploy
 
 Configuration of  `.travis.yml` will automatically deploy each commit to *master* to GitHub pages.
-
-<!-- TODO:
-* Resolve all company images
-* Verify icons
-* Colors
- -->

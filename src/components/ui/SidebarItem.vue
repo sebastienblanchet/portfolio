@@ -23,8 +23,11 @@ export default {
     }
   },
   methods: {
+    // make this better
     scrollTo() {
-      this.$emit("click", this.section);
+      this.$nextTick(() => {
+        this.$refs[this.section].scrollTop = 0;
+      });
     }
   }
 };

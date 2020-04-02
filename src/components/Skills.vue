@@ -4,6 +4,8 @@
     <v-card class="my-2">
       <v-card-title>Languages</v-card-title>
       <v-card-text>
+        <!-- TODO -->
+        <!-- <Rating color="red" rating="4.5" size="20" /> -->
         <v-row align="start">
           <v-col cols="1" v-for="itm in skills.programming" :key="itm">
             <SkillsItem :name="itm" />
@@ -66,13 +68,15 @@
 
 <script>
 import SkillsItem from "@/components/ui/SkillsItem";
+// import Rating from "@/components/ui/Rating";
 import { skills } from "@/assets/resume.json";
 import { logoDict } from "@/assets/dictionaries.json";
 
 export default {
   name: "Skills",
   components: {
-    SkillsItem
+    SkillsItem,
+    // Rating
   },
   data: () => ({
     skills: skills

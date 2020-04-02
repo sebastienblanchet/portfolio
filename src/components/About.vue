@@ -65,7 +65,6 @@
           <v-card-actions>
             <v-btn
               :loading="loading"
-              :disabled="loading"
               color="success"
               class="ma-2 white--text"
               href="https://github.com/sebastienblanchet/Resume/releases/download/v1.1.0/Resume.pdf"
@@ -96,52 +95,10 @@ export default {
   },
   methods: {},
   watch: {
-    // loading wheel
     loader() {
-      this.loading = !this.loading;
-      setTimeout(() => (this.loading = false), 3000);
+      this.loading = "mdi-spin";
     }
   }
 };
 </script>
-
-<style>
-/* maybe get rid of later */
-.custom-loader {
-  animation: loader 1s infinite;
-  display: flex;
-}
-@-moz-keyframes loader {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes loader {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@-o-keyframes loader {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes loader {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-</style>
 

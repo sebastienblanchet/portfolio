@@ -4,7 +4,7 @@
       <v-timeline-item v-for="job in jobs" :key="job.title" large>
         <template v-slot:icon>
           <v-avatar color="white">
-            <v-img :src="require('@/assets/img/' + job.id + '.png')"></v-img>
+            <v-img contain :src="require('@/assets/img/' + job.id + '.png')"></v-img>
           </v-avatar>
         </template>
         <template v-slot:opposite>

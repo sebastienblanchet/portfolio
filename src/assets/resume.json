@@ -33,12 +33,16 @@
       "activity": "biking"
     },
     {
-      "icon": "mdi-pulse",
-      "activity": "DIY electronics"
+      "icon": "mdi-brain",
+      "activity": "tinkering"
+    },
+    {
+      "icon": "mdi-memory",
+      "activity": "electronics"
     },
     {
       "icon": "mdi-engine",
-      "activity": "Mechanics"
+      "activity": "mechanics"
     },
     {
       "icon": "mdi-microsoft-xbox-controller",
@@ -336,7 +340,7 @@
       "url": "http://www.norarc.com/en/",
       "employer": "Nor-Arc",
       "location": "Earlton, ON, CAN",
-      "title": "Junior Detailer",
+      "title": "Junior Detailer (Co-op)",
       "division": "Steel Fabricators",
       "start": "June 2014",
       "end": "Aug. 2014",
