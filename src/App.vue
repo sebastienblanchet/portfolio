@@ -1,15 +1,11 @@
 <template>
   <v-app id="inspire">
-    <Navbar />
+    <Navbar :sections="sections" />
 
     <v-content>
-      <!-- for now lets make this single page -->
-      <Section str="About" />
-      <Section str="Interests" />
-      <Section str="Timeline" />
-      <Section str="Skills" />
-      <Section str="Projects" />
-      <Section str="Info" />
+      <div v-for="section in sections" :key="section">
+        <Section :str="section" />
+      </div>
     </v-content>
 
     <Footer />
@@ -17,7 +13,7 @@
 </template>
 
 <script>
-import Section from "@/Section";
+import Section from "@/components/Section";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -27,6 +23,10 @@ export default {
     Section,
     Footer
   },
+  data: () => ({
+    // define it one here, order matters
+    sections: ["About", "Timeline", "Skills", "Projects", "Info"]
+  }),
   created() {
     this.$vuetify.theme.dark = false;
   }

@@ -1,14 +1,16 @@
 <template>
-  <div>
-    <v-list-item v-for="interest in interests" :key="interest.icon" tile>
-      <v-list-item-action>
-        <v-icon v-text="interest.icon"></v-icon>
-      </v-list-item-action>
-      <v-list-item-content>
-        <v-list-item-title>{{interest.activity}}</v-list-item-title>
-      </v-list-item-content>
-    </v-list-item>
-  </div>
+  <v-container fluid>
+    <v-row dense>
+      <v-col v-for="interest in interests" :key="interest.icon" :cols="4">
+        <v-row dense>
+          <v-col cols="1">
+            <v-icon v-text="interest.icon"></v-icon>
+          </v-col>
+          <v-col>{{interest.activity}}</v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>

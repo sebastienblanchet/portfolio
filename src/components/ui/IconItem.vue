@@ -1,6 +1,7 @@
 <template>
-  <v-btn :href="url" text icon :width="size">
-    <v-icon :size="size" v-text="icon"></v-icon>
+  <v-btn :href="url" target="_blank" :size="size" text icon style="text-transform:none !important;">
+    <v-icon :size="size" v-text="icon" :color="color"></v-icon>
+    {{text}}
   </v-btn>
 </template>
 
@@ -8,9 +9,27 @@
 <script>
 export default {
   props: {
+    // required
     icon: String,
     url: String,
-    size: String
-  }
+    size: {
+      default: "",
+      type: String
+    },
+    color: {
+      default: "",
+      type: String
+    },
+    text: {
+      default: "",
+      type: String
+    },
+    // new tab
+    new: {
+      default: true,
+      type: Boolean
+    }
+  },
+  computed: {}
 };
 </script>

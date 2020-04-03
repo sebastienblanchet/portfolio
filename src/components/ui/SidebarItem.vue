@@ -1,6 +1,6 @@
 <template>
   <!-- link v-bind:href="url"  -->
-  <v-list-item @click="scrollTo()">
+  <v-list-item @click="goTo()">
     <v-list-item-action>
       <v-icon v-text="icon"></v-icon>
     </v-list-item-action>
@@ -23,8 +23,8 @@ export default {
     }
   },
   methods: {
-    scrollTo() {
-      this.$emit("click", this.section);
+    goTo() {
+      this.$vuetify.goTo(this.url);
     }
   }
 };
