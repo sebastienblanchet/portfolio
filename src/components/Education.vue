@@ -4,7 +4,7 @@
       <v-card-title>{{item.name}}</v-card-title>
       <v-list-item three-line>
         <v-list-item-avatar tile>
-          <v-img height="75" contain :src="require('@/assets/img/' + item.id + '.png')"></v-img>
+          <v-img width="150" contain :src="require('@/assets/img/' + item.id + '.png')"></v-img>
         </v-list-item-avatar>
       </v-list-item>
     </v-card>

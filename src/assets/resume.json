@@ -159,23 +159,14 @@
     ]
   },
   "education": [{
-      "id": "li",
-      "url": "https://www.linkedin.com/learning",
-      "name": "LinkedIn",
-      "degree": "Various coursework",
-      "comment": "",
-      "start": "Oct. 2019"
-    },
-    {
-      "id": "uw",
-      "url": "https://www.uwaterloo.ca",
-      "name": "University of Waterloo",
-      "degree": "Bachelor of Applied Science with Distinction",
-      "comment": "Honors Mechanical Engineering Co-op, GPA: 3.5/4.0",
-      "start": "Sept. 2013",
-      "end": "Apr. 2019"
-    }
-  ],
+    "id": "uw",
+    "url": "https://www.uwaterloo.ca",
+    "name": "University of Waterloo",
+    "degree": "Bachelor of Applied Science with Distinction",
+    "comment": "Honors Mechanical Engineering Co-op, GPA: 3.5/4.0",
+    "start": "Sept. 2013",
+    "end": "Apr. 2019"
+  }],
   "jobs": [{
       "id": "pwc",
       "url": "http://www.pwc.ca",

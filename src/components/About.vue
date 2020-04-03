@@ -6,18 +6,20 @@
           <v-card-title class="primary">
             <span class="headline white--text">{{about.name}}</span>
           </v-card-title>
-          <v-avatar class="profile mx-5 my-5" color="white" size="175" tile>
-            <v-img src="@/assets/img/me.png"></v-img>
-          </v-avatar>
-          <v-card-text>
-            <v-row dense>
-              <v-col>
+          <v-card-text class="text-center">
+            <v-avatar class="profile mx-5 my-5" color="white" size="175">
+              <v-img src="@/assets/img/me.png"></v-img>
+            </v-avatar>
+          </v-card-text>
+          <v-card-text class="text-center">
+            <v-row>
+              <v-col cols="mx-auto">
                 <IconItem size="50" icon="mdi-github" :url="about.git" color="grey darken-4" />
               </v-col>
-              <v-col>
+              <v-col cols="mx-auto">
                 <IconItem size="50" icon="mdi-linkedin" :url="about.li" color="indigo" />
               </v-col>
-              <v-col>
+              <v-col cols="mx-auto">
                 <IconItem size="50" icon="mdi-stack-overflow" :url="about.stack" color="orange" />
               </v-col>
             </v-row>
@@ -62,7 +64,7 @@
               Born and raised from a small billingual community of New Liskeard in Northern Ontario, I grew up fixing (mostly breaking) my family's four-wheelers and snowmachine.
               This part of my background played a large part in my motivation to study as a Mechanical Engineer at the University of Waterloo.
               Throughout the course of my undergrad, I was slowly introduced to the world of software development and immediately developped a passion and this is apparent in my journey as seen in the
-              <b>Timeline</b> below.
+              <Goto section="Timeline" />section below.
             </div>
           </v-card-text>
           <v-card-text>
@@ -78,9 +80,17 @@
               href="https://github.com/sebastienblanchet/Resume/releases/download/v1.1.0/Resume.pdf"
             >
               Resume
-              <v-icon right>mdi-download</v-icon>
+              <v-icon left>mdi-download</v-icon>
             </v-btn>
           </v-card-actions>
+        </v-card>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <v-card class="mx-auto">
+          <v-card-title>Interests</v-card-title>
+          <Interests />
         </v-card>
       </v-col>
     </v-row>
@@ -88,12 +98,16 @@
 </template>
 
 <script>
+import Interests from "@/components/Interests";
 import IconItem from "@/components/ui/IconItem";
+import Goto from "@/components/ui/Goto";
 import { about } from "@/assets/resume.json";
 
 export default {
   components: {
-    IconItem
+    Interests,
+    IconItem,
+    Goto
   },
   data() {
     return {

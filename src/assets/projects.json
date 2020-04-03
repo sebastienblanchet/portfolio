@@ -17,7 +17,18 @@
     "related": "LinkedIn Learning",
     "date": "Ongoing",
     "description": [
-      "Learning rails"
+      "Learning Ruby on Rails"
+    ]
+  },
+  {
+    "title": "Learning GraphQL",
+    "img": "li",
+    "url": "https://www.linkedin.com/learning/graph-ql-essential-training",
+    "code": "https://github.com/sebastienblanchet/graphql-linkedin-learning/",
+    "related": "LinkedIn Learning",
+    "date": "Ongoing",
+    "description": [
+      "Learning GraphQL"
     ]
   },
   {
@@ -25,7 +36,7 @@
     "img": "li",
     "url": "https://www.linkedin.com/learning/vue-essential-training-2",
     "code": "https://github.com/sebastienblanchet/vue-linkedin-learning/",
-    "download": "https://github.com/sebastienblanchet/vue-linkedin-learning/blob/master/Certificate.pdf",
+    "download": "https://raw.githubusercontent.com/sebastienblanchet/vue-linkedin-learning/master/Certificate.pdf",
     "related": "LinkedIn Learning",
     "date": "Mar. 2020",
     "description": [
@@ -37,7 +48,7 @@
     "img": "li",
     "url": "https://www.linkedin.com/learning/react-js-essential-training-3/",
     "code": "https://github.com/sebastienblanchet/react-linkedin-learning/",
-    "download": "https://github.com/sebastienblanchet/react-linkedin-learning/blob/master/Certificate.pdf",
+    "download": "https://raw.githubusercontent.com/sebastienblanchet/react-linkedin-learning/master/Certificate.pdf",
     "related": "LinkedIn Learning",
     "date": "Mar. 2020",
     "description": [
@@ -49,7 +60,7 @@
     "img": "li",
     "url": "https://www.linkedin.com/learning/learning-node-js-2/",
     "code": "https://github.com/sebastienblanchet/node-linkedin-learning/",
-    "download": "https://github.com/sebastienblanchet/node-linkedin-learning/blob/master/Certificate.pdf",
+    "download": "https://raw.githubusercontent.com/sebastienblanchet/node-linkedin-learning/master/Certificate.pdf",
     "related": "LinkedIn Learning",
     "date": "Mar. 2020",
     "description": [
@@ -61,7 +72,7 @@
     "img": "li",
     "url": "https://www.linkedin.com/learning/typescript-essential-training",
     "code": "https://github.com/sebastienblanchet/typescript-linkedin-learning/",
-    "download": "https://github.com/sebastienblanchet/typescript-linkedin-learning/blob/master/Certificate.pdf",
+    "download": "https://raw.githubusercontent.com/sebastienblanchet/typescript-linkedin-learning/master/Certificate.pdf",
     "related": "LinkedIn Learning",
     "date": "Mar. 2020",
     "description": [
@@ -73,7 +84,7 @@
     "img": "li",
     "url": "https://www.linkedin.com/learning/javascript-essential-training-3/",
     "code": "https://github.com/sebastienblanchet/js-linkedin-learning/",
-    "download": "https://github.com/sebastienblanchet/js-linkedin-learning/blob/master/Certificate.pdf",
+    "download": "https://raw.githubusercontent.com/sebastienblanchet/js-linkedin-learning/master/Certificate.pdf",
     "related": "LinkedIn Learning",
     "date": "Mar. 2020",
     "description": [
@@ -85,7 +96,7 @@
     "img": "li",
     "url": "https://www.linkedin.com/learning/mysql-essential-training-2",
     "code": "https://github.com/sebastienblanchet/mysql-linkedin-learning/",
-    "download": "https://github.com/sebastienblanchet/mysql-linkedin-learning/blob/master/Certificate.pdf",
+    "download": "https://raw.githubusercontent.com/sebastienblanchet/mysql-linkedin-learning/master/Certificate.pdf",
     "related": "LinkedIn Learning",
     "date": "Mar. 2020",
     "description": [

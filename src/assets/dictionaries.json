@@ -1,4 +1,12 @@
 {
+  "sectionDict": {
+    "About": "mdi-human-greeting",
+    "Timeline": "mdi-timeline-text-outline",
+    "Skills": "mdi-laptop-mac",
+    "Education": "mdi-school-outline",
+    "Projects": "mdi-code-braces",
+    "Info": "mdi-information-outline"
+  },
   "logoDict": {
     "C": "https://cdn.worldvectorlogo.com/logos/c-2975.svg",
     "C++": "https://cdn.worldvectorlogo.com/logos/c.svg",
