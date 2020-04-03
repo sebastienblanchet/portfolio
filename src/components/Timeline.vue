@@ -42,11 +42,6 @@ export default {
     jobs: jobs
   }),
   methods: {
-    getImg(str) {
-      const path = `'@/assets/img/${str}.png'`;
-      return path;
-    },
-
     getGoogleMaps(str) {
       // regex to replace spaces with + for map call
       str = str.replace(/\s/g, "+");

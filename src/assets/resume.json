@@ -4,8 +4,8 @@
     "location": "Montreal, QC, CAN",
     "email": "s3blanch@edu.uwaterloo.ca",
     "li": "https://www.linkedin.com/in/sebastien-blanchet/",
-    "git": "https://github.com/sebastienblanchet",
-    "stack": "https://stackoverflow.com/users/9791070/seb-blanchet",
+    "git": "https://www.github.com/sebastienblanchet",
+    "stack": "https://www.stackoverflow.com/users/9791070/seb-blanchet",
     "summary": "Software engineer"
   },
   "interests": [{
@@ -160,7 +160,7 @@
   },
   "education": [{
       "id": "li",
-      "url": "https://linkedin.com/learning",
+      "url": "https://www.linkedin.com/learning",
       "name": "LinkedIn",
       "degree": "Various coursework",
       "comment": "",
@@ -168,7 +168,7 @@
     },
     {
       "id": "uw",
-      "url": "https://uwaterloo.ca",
+      "url": "https://www.uwaterloo.ca",
       "name": "University of Waterloo",
       "degree": "Bachelor of Applied Science with Distinction",
       "comment": "Honors Mechanical Engineering Co-op, GPA: 3.5/4.0",
@@ -352,6 +352,9 @@
   ],
   "projects": [{
       "title": "Portfolio Web Application",
+      "img": "logo",
+      "url": "",
+      "download": "",
       "related": "Personal",
       "date": "Ongoing",
       "description": [
@@ -360,6 +363,9 @@
     },
     {
       "title": "Robot Arm Controller",
+      "img": "logo",
+      "url": "",
+      "download": "",
       "related": "ECE 488: Multi-Variable Controls",
       "date": "Apr. 2019",
       "description": [
@@ -368,6 +374,9 @@
     },
     {
       "title": "Heated Press System",
+      "img": "logo",
+      "url": "",
+      "download": "",
       "related": "ME 482: Capstone Design Project",
       "date": "Mar. 2019",
       "description": [
@@ -376,6 +385,9 @@
     },
     {
       "title": "Swift App Training",
+      "img": "logo",
+      "url": "",
+      "download": "",
       "related": "Apple: Software University",
       "date": "Aug. 2018",
       "description": [
@@ -384,6 +396,9 @@
     },
     {
       "title": "MIT Open Courseware Self-Study",
+      "img": "logo",
+      "url": "",
+      "download": "",
       "related": "6.006 Introduction to Algorithms",
       "date": "May 2018",
       "description": [
@@ -392,6 +407,9 @@
     },
     {
       "title": "Embedded Control Training",
+      "img": "logo",
+      "url": "",
+      "download": "",
       "related": "National Instruments",
       "date": "Oct. 2018",
       "description": [
@@ -400,6 +418,9 @@
     },
     {
       "title": "Dune-Buggy Magneto Repair",
+      "img": "logo",
+      "url": "",
+      "download": "",
       "related": "Personal",
       "date": "Aug. 2018",
       "description": [
@@ -408,6 +429,9 @@
     },
     {
       "title": "Ball & Beam Lab",
+      "img": "logo",
+      "url": "",
+      "download": "",
       "related": "ECE481: Digital Control Systems",
       "date": "Aug. 2017",
       "description": [
@@ -416,6 +440,9 @@
     },
     {
       "title": "Python Design Optimization",
+      "img": "logo",
+      "url": "",
+      "download": "",
       "related": "WKRPT 400: Co-op 5",
       "date": "Apr. 2017",
       "description": [
@@ -424,6 +451,9 @@
     },
     {
       "title": "Drum Rhythm Arduino Hack",
+      "img": "logo",
+      "url": "",
+      "download": "",
       "related": "Personal: WIT Hackathon",
       "date": "Mar. 2017",
       "description": [
@@ -432,6 +462,9 @@
     },
     {
       "title": "Wind Turbine Pitch Actuator",
+      "img": "logo",
+      "url": "",
+      "download": "",
       "related": "ME360: Control Systems",
       "date": "Dec. 2016",
       "description": [
@@ -440,6 +473,9 @@
     },
     {
       "title": "Mining Safety Device",
+      "img": "logo",
+      "url": "",
+      "download": "",
       "related": "ME380: Engineering Design",
       "date": "Nov. 2016",
       "description": [
@@ -448,6 +484,9 @@
     },
     {
       "title": "DC Motor Control System",
+      "img": "logo",
+      "url": "",
+      "download": "",
       "related": "ME360: Control Systems",
       "date": "Oct. 2016",
       "description": [
@@ -456,6 +495,9 @@
     },
     {
       "title": "CNC Bending Powertrain",
+      "img": "logo",
+      "url": "",
+      "download": "",
       "related": "WKRPT300: Co-op 4",
       "date": "Sept. 2016",
       "description": [
@@ -464,6 +506,9 @@
     },
     {
       "title": "SOLIDWORKS Add-In Development",
+      "img": "logo",
+      "url": "",
+      "download": "",
       "related": "WKRPT 300: Co-op 3",
       "date": "July. 2016",
       "description": [
@@ -472,6 +517,9 @@
     },
     {
       "title": "VBA Software Development",
+      "img": "logo",
+      "url": "",
+      "download": "",
       "related": "WKRPT 200: Co-op 3",
       "date": "Dec. 2015",
       "description": [
@@ -480,6 +528,9 @@
     },
     {
       "title": "Embedded Robot Design",
+      "img": "logo",
+      "url": "",
+      "download": "",
       "related": "GENE121: Digital Computation",
       "date": "Apr. 2014",
       "description": [

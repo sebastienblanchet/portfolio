@@ -5,7 +5,7 @@
       <v-col v-for="project in projects" :key="project.name" :cols="3">
         <v-card>
           <v-img
-            src="@/assets/img/logo.png"
+            :src="require('@/assets/img/' + project.img + '.png')"
             class="white--text align-end"
             gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
             height="200px"
@@ -16,16 +16,12 @@
           <v-card-actions>
             <v-spacer></v-spacer>
 
-            <v-btn icon>
-              <v-icon>mdi-heart</v-icon>
+            <v-btn icon v-show="isValid(project.download)">
+              <v-icon>mdi-download</v-icon>
             </v-btn>
 
-            <v-btn icon>
-              <v-icon>mdi-bookmark</v-icon>
-            </v-btn>
-
-            <v-btn icon>
-              <v-icon>mdi-share-variant</v-icon>
+            <v-btn icon v-show="isValid(project.url)">
+              <v-icon>mdi-link-variant</v-icon>
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -42,6 +38,13 @@ export default {
   data: () => ({
     projects: projects
   }),
-  methods: {}
+  methods: {
+    isValid(str) {
+      return str.length > 0;
+    },
+    isValidDownload(download) {
+      return this.isValid(download);
+    }
+  }
 };
 </script>
