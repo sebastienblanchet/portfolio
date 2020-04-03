@@ -25,3 +25,5 @@ serve dist
 ## Deploy
 
 Configuration of  `.travis.yml` will automatically deploy each commit to *master* to GitHub pages.
+
+If you are forking the repository, make sure to visit [Vue's deployment guide](https://cli.vuejs.org/guide/deployment.html#github-pages).

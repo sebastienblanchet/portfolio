@@ -1,5 +1,12 @@
 <template>
-  <v-btn :href="url" target="_blank" text icon :size="size" style="text-transform:none !important;">
+  <v-btn
+    :href="url"
+    :target="target"
+    :size="size"
+    text
+    icon
+    style="text-transform:none !important;"
+  >
     <v-icon :size="size" v-text="icon" :color="color"></v-icon>
     {{text}}
   </v-btn>
@@ -23,6 +30,20 @@ export default {
     text: {
       default: "",
       type: String
+    },
+    // new tab
+    new: {
+      default: true,
+      type: Boolean
+    }
+  },
+  computed: {
+    target: function() {
+      if (!this.new) {
+        console.log(this.url);
+        console.log(this.new);
+      }
+      return this.new ? "_blank" : "";
     }
   }
 };

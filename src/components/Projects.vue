@@ -1,5 +1,4 @@
 <template>
-  <!-- <div v-for="project in projects" :key="project.title">{{project.title}}</div> -->
   <v-container fluid>
     <v-row dense>
       <v-col v-for="project in projects" :key="project.name" :cols="3">
@@ -9,24 +8,22 @@
             class="white--text align-end"
             gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
             height="200px"
+            contain
           >
             <v-card-title class="subtitle-1 font-weight-bold" v-text="project.title"></v-card-title>
           </v-img>
-
           <v-card-actions>
-            <v-spacer></v-spacer>
-
             <div v-show="isValid(project.download)">
-              <IconItem icon="mdi-download" :url="project.download" />
+              <IconItem icon="mdi-download" :url="project.download" :new="false" />
             </div>
-
             <div v-show="isValid(project.code)">
               <IconItem icon="mdi-code-tags" :url="project.code" />
             </div>
-
             <div v-show="isValid(project.url)">
               <IconItem icon="mdi-link-variant" :url="project.url" />
             </div>
+            <v-spacer></v-spacer>
+            <Dialog :project="project" />
           </v-card-actions>
         </v-card>
       </v-col>
@@ -35,12 +32,14 @@
 </template>
 
 <script>
+import Dialog from "@/components/ui/Dialog";
 import IconItem from "@/components/ui/IconItem";
-import { projects } from "@/assets/resume.json";
+import projects from "@/assets/projects.json";
 
 export default {
   name: "Projects",
   components: {
+    Dialog,
     IconItem
   },
   data: () => ({
