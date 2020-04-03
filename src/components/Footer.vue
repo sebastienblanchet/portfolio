@@ -11,15 +11,11 @@
       </v-col>
       <v-spacer></v-spacer>
       <v-col cols="auto">
-        <v-btn class="dark icon" @click="invertTheme()" text small>
+        <v-btn class="dark icon" @click="invertTheme()" text icon :size="18">
           <v-icon size="18px" v-text="theme"></v-icon>
         </v-btn>
-        <v-btn class="dark icon" :href="github" text small>
-          <v-icon size="18px">mdi-code-tags</v-icon>
-        </v-btn>
-        <v-btn class="dark icon" :href="bugs" text small>
-          <v-icon size="18px">mdi-bug-outline</v-icon>
-        </v-btn>
+        <IconItem size="18" :url="github" icon="mdi-code-tags" />
+        <IconItem size="18" :url="bugs" icon="mdi-bug-outline" />
       </v-col>
     </v-row>
   </v-footer>

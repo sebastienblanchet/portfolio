@@ -10,9 +10,17 @@
             <v-img src="@/assets/img/me.png"></v-img>
           </v-avatar>
           <v-card-text>
-            <IconItem size="50" icon="mdi-github" :url="about.git" />
-            <IconItem size="50" icon="mdi-linkedin" :url="about.li" />
-            <IconItem size="50" icon="mdi-stack-overflow" :url="about.stack" />
+            <v-row dense>
+              <v-col>
+                <IconItem size="50" icon="mdi-github" :url="about.git" color="grey darken-4" />
+              </v-col>
+              <v-col>
+                <IconItem size="50" icon="mdi-linkedin" :url="about.li" color="indigo" />
+              </v-col>
+              <v-col>
+                <IconItem size="50" icon="mdi-stack-overflow" :url="about.stack" color="orange" />
+              </v-col>
+            </v-row>
           </v-card-text>
           <v-divider></v-divider>
           <v-list>
@@ -44,7 +52,7 @@
             <!-- <p>adjective</p> -->
             <div class="text--primary">
               I coded this entirely from scratch with the help of my new favorite JavaScript framework/library
-              <v-icon size="24px">mdi-vuejs</v-icon>
+              <v-icon size="24px" color="green darken-1">mdi-vuejs</v-icon>
               <b>Vue.js</b>
             </div>
           </v-card-text>

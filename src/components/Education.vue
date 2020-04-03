@@ -1,8 +1,13 @@
 <template>
   <div>
-    <v-row v-for="item in education" :key="item.icon" tile>
-      <v-img height="75" contain :src="require('@/assets/img/' + item.id + '.png')"></v-img>
-    </v-row>
+    <v-card class="mx-2 my-2" v-for="item in education" :key="item.icon" tile>
+      <v-card-title>{{item.name}}</v-card-title>
+      <v-list-item three-line>
+        <v-list-item-avatar tile>
+          <v-img height="75" contain :src="require('@/assets/img/' + item.id + '.png')"></v-img>
+        </v-list-item-avatar>
+      </v-list-item>
+    </v-card>
   </div>
 </template>
 

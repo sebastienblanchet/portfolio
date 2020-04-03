@@ -16,8 +16,18 @@
     <!-- TO ADD IMG -->
     <v-app-bar app clipped-left dark color="primary">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title>Portfolio</v-toolbar-title>
+      <v-toolbar-title id="top">
+        <v-btn
+          text
+          @click="goHome()"
+          class="headline"
+          style="text-transform:none !important;"
+        >Portfolio</v-btn>
+      </v-toolbar-title>
       <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
     </v-app-bar>
   </div>
 </template>
@@ -31,6 +41,11 @@ export default {
   },
   data: () => ({
     drawer: null
-  })
+  }),
+  methods: {
+    goHome() {
+      this.$vuetify.goTo("#top");
+    }
+  }
 };
 </script>

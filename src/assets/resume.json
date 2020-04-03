@@ -178,7 +178,7 @@
   ],
   "jobs": [{
       "id": "pwc",
-      "url": "http: //www.pwc.ca",
+      "url": "http://www.pwc.ca",
       "employer": "Pratt & Whitney Canada",
       "location": "Montreal, QC, CAN",
       "title": "Software Engineer",
@@ -207,7 +207,7 @@
     },
     {
       "id": "tesla",
-      "url": "https: //www.tesla.com/",
+      "url": "https://www.tesla.com/",
       "employer": "Tesla",
       "location": "Palo Alto, CA, USA",
       "title": "Firmware Engineering (Co-op)",
@@ -260,7 +260,7 @@
         "LabVIEW",
         "MATLAB",
         "Simulink",
-        "FPGA",
+        "Python",
         "Git"
       ]
     },
@@ -352,7 +352,7 @@
   ],
   "projects": [{
       "title": "Portfolio Web Application",
-      "employer": "Personal",
+      "related": "Personal",
       "date": "Ongoing",
       "description": [
         "Showcasing portfolio using full-stack development/DevOps skills on GitHub-pages hosted application"
@@ -360,7 +360,7 @@
     },
     {
       "title": "Robot Arm Controller",
-      "employer": "ECE 488: Multi-Variable Controls",
+      "related": "ECE 488: Multi-Variable Controls",
       "date": "Apr. 2019",
       "description": [
         "Modeled and controlled MIMO non-linear system in MATLAB using optimal LGC control methods"
@@ -368,7 +368,7 @@
     },
     {
       "title": "Heated Press System",
-      "employer": "ME 482: Capstone Design Project",
+      "related": "ME 482: Capstone Design Project",
       "date": "Mar. 2019",
       "description": [
         "Led electrical system efforts including harnessing/debugging and temperature/motor controls in C on MCU"
@@ -376,7 +376,7 @@
     },
     {
       "title": "Swift App Training",
-      "employer": "Apple: Software University",
+      "related": "Apple: Software University",
       "date": "Aug. 2018",
       "description": [
         "Reviewed the fundamentals of object oriented programming in Swift and coded an application"
@@ -384,7 +384,7 @@
     },
     {
       "title": "MIT Open Courseware Self-Study",
-      "employer": "6.006 Introduction to Algorithms",
+      "related": "6.006 Introduction to Algorithms",
       "date": "May 2018",
       "description": [
         "Covered complexity, sorting algorithms, graphs, and dynamic programming in Jupyter Python notebooks"
@@ -392,7 +392,7 @@
     },
     {
       "title": "Embedded Control Training",
-      "employer": "National Instruments",
+      "related": "National Instruments",
       "date": "Oct. 2018",
       "description": [
         "Developped NI cRIO FPGA, RTOS"
@@ -400,7 +400,7 @@
     },
     {
       "title": "Dune-Buggy Magneto Repair",
-      "employer": "Personal",
+      "related": "Personal",
       "date": "Aug. 2018",
       "description": [
         "Diagnosed fuel system ignition issue then replaced coil and armature of solid-state system"
@@ -408,7 +408,7 @@
     },
     {
       "title": "Ball & Beam Lab",
-      "employer": "ECE481: Digital Control Systems",
+      "related": "ECE481: Digital Control Systems",
       "date": "Aug. 2017",
       "description": [
         "Designed LabVIEW HMI, performed system ID, implemented/tuned digital controller on NI cRIO FPGA"
@@ -416,7 +416,7 @@
     },
     {
       "title": "Python Design Optimization",
-      "employer": "WKRPT 400: Co-op 5",
+      "related": "WKRPT 400: Co-op 5",
       "date": "Apr. 2017",
       "description": [
         "Developed Python script to solve material sizing algorithm, presented findings in LaTeX report"
@@ -424,7 +424,7 @@
     },
     {
       "title": "Drum Rhythm Arduino Hack",
-      "employer": "Personal: WIT Hackathon",
+      "related": "Personal: WIT Hackathon",
       "date": "Mar. 2017",
       "description": [
         "Coded firmware in C and communicated over UART to MATLAB for real-time monitoring of vibration"
@@ -432,7 +432,7 @@
     },
     {
       "title": "Wind Turbine Pitch Actuator",
-      "employer": "ME360: Control Systems",
+      "related": "ME360: Control Systems",
       "date": "Dec. 2016",
       "description": [
         "Studied time/frequency domain responses in MATLAB for closed-loop stability of PI controlled Simulink"
@@ -440,7 +440,7 @@
     },
     {
       "title": "Mining Safety Device",
-      "employer": "ME380: Engineering Design",
+      "related": "ME380: Engineering Design",
       "date": "Nov. 2016",
       "description": [
         "Developed a 3D printed enclosure to protect internal Arduino and sensors of severe underground environment"
@@ -448,7 +448,7 @@
     },
     {
       "title": "DC Motor Control System",
-      "employer": "ME360: Control Systems",
+      "related": "ME360: Control Systems",
       "date": "Oct. 2016",
       "description": [
         "Designed PID control in Simulink for a DC motor; implemented in real-time with QUARC C code generation"
@@ -456,7 +456,7 @@
     },
     {
       "title": "CNC Bending Powertrain",
-      "employer": "WKRPT300: Co-op 4",
+      "related": "WKRPT300: Co-op 4",
       "date": "Sept. 2016",
       "description": [
         "Performed iterative testing with HMI to gather data for selection; assured compatibility into control system"
@@ -464,7 +464,7 @@
     },
     {
       "title": "SOLIDWORKS Add-In Development",
-      "employer": "WKRPT 300: Co-op 3",
+      "related": "WKRPT 300: Co-op 3",
       "date": "July. 2016",
       "description": [
         "Accelerated assembly drawing package preparation by developing a VB add-in with the MS Visual Studio IDE"
@@ -472,7 +472,7 @@
     },
     {
       "title": "VBA Software Development",
-      "employer": "WKRPT 200: Co-op 3",
+      "related": "WKRPT 200: Co-op 3",
       "date": "Dec. 2015",
       "description": [
         "Programmed a report generating VBA project to extract and reduce SAP enterprise software data"
@@ -480,7 +480,7 @@
     },
     {
       "title": "Embedded Robot Design",
-      "employer": "GENE121: Digital Computation",
+      "related": "GENE121: Digital Computation",
       "date": "Apr. 2014",
       "description": [
         "Coded a C++ algorithm, designed and assembled a robot to perform a color sorting and movement operation"
