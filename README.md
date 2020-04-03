@@ -1,6 +1,9 @@
 ## Portfolio
 
-[![Build Status](https://travis-ci.org/sebastienblanchet/portfolio.svg?branch=master)](https://travis-ci.org/sebastienblanchet/portfolio)
+<p align="start">
+  <a href="https://travis-ci.org/sebastienblanchet/portfolio"><img src="https://travis-ci.org/sebastienblanchet/portfolio.svg?branch=master" alt="Build Status"></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
+</p>
 
 #### Sebastien Blanchet
 
@@ -70,3 +73,9 @@ Key repository files are listed below:
 │       └── filters.js
 └── tests
 ```
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
+
+Copyright (c) 2020-present, Sebastien Blanchet

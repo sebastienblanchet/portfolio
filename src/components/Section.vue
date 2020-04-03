@@ -3,8 +3,12 @@
   <v-container fluid :id="str">
     <v-expansion-panels v-model="panel" multiple :ref="str">
       <v-expansion-panel>
-        <v-expansion-panel-header class="headline">
-          <b>{{str}}</b>
+        <v-expansion-panel-header class="headline font-weight-bold">
+          <div>
+            <v-icon class="ma-2" v-text="sectionDict[str]" style="vertical-align: middle;"></v-icon>
+            <span class="secondary--text" style="vertical-align: middle;">{{str}}</span>
+          </div>
+          <v-spacer />
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <component v-bind:is="component" />
@@ -22,6 +26,7 @@ import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import Projects from "@/components/Projects";
 import Info from "@/components/Info";
+import { sectionDict } from "@/assets/dictionaries.json";
 
 export default {
   components: {
@@ -35,6 +40,7 @@ export default {
   },
   data: () => ({
     panel: [0, 1],
+    sectionDict: sectionDict,
     dict: {
       About: About,
       Interests: Interests,

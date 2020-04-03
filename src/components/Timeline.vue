@@ -15,16 +15,18 @@
           <!-- TODO fix this -->
           <!-- <IconItem icon="mdi-map-marker" :url="getGoogleMaps(job.location)" :text="job.location" /> -->
         </template>
-        <v-card class="elevation-2">
-          <v-card-title class="headline">{{job.title}}</v-card-title>
-          <v-card-text>
-            {{job.employer}}
-            <IconItem size="20" icon="mdi-link-variant" :url="job.url" />
-          </v-card-text>
-          <v-card-text>{{job.division}}</v-card-text>
-          <v-card-text>{{job.technologies | arr2Csv}}</v-card-text>
-          <!-- TODO click for more -->
-        </v-card>
+        <v-hover v-slot:default="{ hover }">
+          <v-card :elevation="hover ? 12 : 2">
+            <v-card-title class="headline">{{job.title}}</v-card-title>
+            <v-card-text>
+              {{job.employer}}
+              <IconItem size="20" icon="mdi-link-variant" :url="job.url" />
+            </v-card-text>
+            <v-card-text>{{job.division}}</v-card-text>
+            <v-card-text>{{job.technologies | arr2Csv}}</v-card-text>
+            <!-- TODO click for more -->
+          </v-card>
+        </v-hover>
       </v-timeline-item>
     </v-timeline>
   </div>
