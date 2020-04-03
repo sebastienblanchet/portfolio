@@ -159,21 +159,21 @@
     ]
   },
   "education": [{
+      "id": "li",
+      "url": "https://linkedin.com/learning",
+      "name": "LinkedIn",
+      "degree": "Various coursework",
+      "comment": "",
+      "start": "Oct. 2019"
+    },
+    {
       "id": "uw",
       "url": "https://uwaterloo.ca",
-      "institution": "University of Waterloo",
+      "name": "University of Waterloo",
       "degree": "Bachelor of Applied Science with Distinction",
       "comment": "Honors Mechanical Engineering Co-op, GPA: 3.5/4.0",
       "start": "Sept. 2013",
       "end": "Apr. 2019"
-    },
-    {
-      "id": "li",
-      "url": "https://linkedin.com/learning",
-      "institution": "LinkedIn",
-      "degree": "Various coursework",
-      "comment": "",
-      "start": "Oct. 2019"
     }
   ],
   "jobs": [{

@@ -1,7 +1,7 @@
 <template>
   <!-- wrapper class to apply same container themes-->
-  <v-container fluid>
-    <v-expansion-panels v-model="panel" multiple :id="str" :ref="str">
+  <v-container fluid :id="str">
+    <v-expansion-panels v-model="panel" multiple :ref="str">
       <v-expansion-panel>
         <v-expansion-panel-header class="headline">
           <b>{{str}}</b>
@@ -19,6 +19,7 @@ import About from "@/components/About";
 import Interests from "@/components/Interests";
 import Timeline from "@/components/Timeline";
 import Skills from "@/components/Skills";
+import Education from "@/components/Education";
 import Projects from "@/components/Projects";
 import Info from "@/components/Info";
 
@@ -28,6 +29,7 @@ export default {
     Interests,
     Timeline,
     Skills,
+    Education,
     Projects,
     Info
   },
@@ -38,6 +40,7 @@ export default {
       Interests: Interests,
       Timeline: Timeline,
       Skills: Skills,
+      Education: Education,
       Projects: Projects,
       Info: Info
     }
@@ -50,14 +53,6 @@ export default {
       return this.dict[this.str];
     }
   },
-  methods: {
-    // scroll to anchor.....
-    // https://stackoverflow.com/questions/42645964/vue-js-anchor-to-div-within-the-same-component
-    scrollMeTo(refName) {
-      var element = this.$refs[refName];
-      var top = element.offsetTop;
-      window.scrollTo(0, top);
-    }
-  }
+  methods: {}
 };
 </script>

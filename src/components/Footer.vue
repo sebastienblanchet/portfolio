@@ -1,6 +1,6 @@
 <template>
   <v-footer app dark class="secondary">
-    <v-row>
+    <v-row align="center" class="caption">
       <v-col cols="auto">{{author.name}}</v-col>
       <v-spacer></v-spacer>
       <v-col cols="auto">
@@ -36,13 +36,16 @@ export default {
   data: () => ({
     version: version,
     author: author,
-    github: homepage,
+    homepage: homepage,
     invert: false,
     theme: "mdi-rotate-45 mdi-moon-waxing-crescent"
   }),
   computed: {
-    bugs: function () {
-      return `${this.github}/issues/new`;
+    github: function() {
+      return `${this.homepage}/tree/v${this.version}`;
+    },
+    bugs: function() {
+      return `${this.homepage}/issues`;
     }
   },
   methods: {
@@ -50,10 +53,9 @@ export default {
       // toggle
       this.invert = !this.invert;
 
-      if(this.invert) {
+      if (this.invert) {
         this.theme = "mdi-decagram";
-      }
-      else {
+      } else {
         this.theme = "mdi-rotate-45 mdi-moon-waxing-crescent";
       }
 

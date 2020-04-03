@@ -5,7 +5,8 @@
       <v-card-title>Languages</v-card-title>
       <v-card-text>
         <!-- TODO -->
-        <!-- <Rating color="red" rating="4.5" size="20" /> -->
+        <!-- <Rating color="red" :rating="4.5" size="20" /> -->
+        <!-- <Rating color="red" :rating="3" size="20" /> -->
         <v-row align="start">
           <v-col cols="1" v-for="itm in skills.programming" :key="itm">
             <SkillsItem :name="itm" />
@@ -75,7 +76,7 @@ import { logoDict } from "@/assets/dictionaries.json";
 export default {
   name: "Skills",
   components: {
-    SkillsItem,
+    SkillsItem
     // Rating
   },
   data: () => ({

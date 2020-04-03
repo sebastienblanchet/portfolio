@@ -3,11 +3,11 @@
     <Navbar />
 
     <v-content>
-      <!-- for now lets make this single page -->
       <Section str="About" />
       <Section str="Interests" />
       <Section str="Timeline" />
       <Section str="Skills" />
+      <Section str="Education" />
       <Section str="Projects" />
       <Section str="Info" />
     </v-content>
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import Section from "@/Section";
+import Section from "@/components/Section";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
