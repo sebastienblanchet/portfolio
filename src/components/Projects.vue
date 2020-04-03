@@ -16,13 +16,17 @@
           <v-card-actions>
             <v-spacer></v-spacer>
 
-            <v-btn icon v-show="isValid(project.download)">
-              <v-icon>mdi-download</v-icon>
-            </v-btn>
+            <div v-show="isValid(project.download)">
+              <IconItem icon="mdi-download" :url="project.download" />
+            </div>
 
-            <v-btn icon v-show="isValid(project.url)">
-              <v-icon>mdi-link-variant</v-icon>
-            </v-btn>
+            <div v-show="isValid(project.code)">
+              <IconItem icon="mdi-code-tags" :url="project.code" />
+            </div>
+
+            <div v-show="isValid(project.url)">
+              <IconItem icon="mdi-link-variant" :url="project.url" />
+            </div>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -31,16 +35,20 @@
 </template>
 
 <script>
+import IconItem from "@/components/ui/IconItem";
 import { projects } from "@/assets/resume.json";
 
 export default {
   name: "Projects",
+  components: {
+    IconItem
+  },
   data: () => ({
     projects: projects
   }),
   methods: {
     isValid(str) {
-      return str.length > 0;
+      return str ? str.length > 0 : false;
     },
     isValidDownload(download) {
       return this.isValid(download);

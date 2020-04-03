@@ -362,6 +362,99 @@
       ]
     },
     {
+      "title": "Learning Rails",
+      "img": "li",
+      "url": "https://www.linkedin.com/learning/rails-essential-training-6",
+      "code": "https://github.com/sebastienblanchet/rails-linkedin-learning/",
+      "related": "LinkedIn Learning",
+      "date": "Ongoing",
+      "description": [
+        "Learning rails"
+      ]
+    },
+    {
+      "title": "Learning Vue.js",
+      "img": "li",
+      "url": "https://www.linkedin.com/learning/vue-essential-training-2",
+      "code": "https://github.com/sebastienblanchet/vue-linkedin-learning/",
+      "download": "https://github.com/sebastienblanchet/vue-linkedin-learning/blob/master/Certificate.pdf",
+      "related": "LinkedIn Learning",
+      "date": "Mar. 2020",
+      "description": [
+        "Learning vue"
+      ]
+    },
+    {
+      "title": "Learning React",
+      "img": "li",
+      "url": "https://www.linkedin.com/learning/react-essential-training",
+      "code": "https://github.com/sebastienblanchet/react-linkedin-learning/",
+      "download": "https://github.com/sebastienblanchet/react-linkedin-learning/blob/master/Certificate.pdf",
+      "related": "LinkedIn Learning",
+      "date": "Mar. 2020",
+      "description": [
+        "Learning react"
+      ]
+    },
+    {
+      "title": "Learning Node.js",
+      "img": "li",
+      "url": "https://www.linkedin.com/learning/node-essential-training",
+      "code": "https://github.com/sebastienblanchet/node-linkedin-learning/",
+      "download": "https://github.com/sebastienblanchet/node-linkedin-learning/blob/master/Certificate.pdf",
+      "related": "LinkedIn Learning",
+      "date": "Mar. 2020",
+      "description": [
+        "Learning node"
+      ]
+    },
+    {
+      "title": "Learning Typescript",
+      "img": "li",
+      "url": "https://www.linkedin.com/learning/typescript-essential-training-2",
+      "code": "https://github.com/sebastienblanchet/typescript-linkedin-learning/",
+      "download": "https://github.com/sebastienblanchet/typescript-linkedin-learning/blob/master/Certificate.pdf",
+      "related": "LinkedIn Learning",
+      "date": "Mar. 2020",
+      "description": [
+        "Learning typescript"
+      ]
+    },
+    {
+      "title": "Learning JavaScript",
+      "img": "li",
+      "url": "https://www.linkedin.com/learning/js-essential-training-2",
+      "code": "https://github.com/sebastienblanchet/js-linkedin-learning/",
+      "download": "https://github.com/sebastienblanchet/js-linkedin-learning/blob/master/Certificate.pdf",
+      "related": "LinkedIn Learning",
+      "date": "Mar. 2020",
+      "description": [
+        "Learning js"
+      ]
+    },
+    {
+      "title": "Learning MySQL",
+      "img": "li",
+      "url": "https://www.linkedin.com/learning/mysql-essential-training-2",
+      "code": "https://github.com/sebastienblanchet/mysql-linkedin-learning/",
+      "download": "https://github.com/sebastienblanchet/mysql-linkedin-learning/blob/master/Certificate.pdf",
+      "related": "LinkedIn Learning",
+      "date": "Mar. 2020",
+      "description": [
+        "Learning MySQL"
+      ]
+    },
+    {
+      "title": "Learning C#",
+      "img": "li",
+      "url": "https://www.linkedin.com/learning/learning-c-sharp-3/",
+      "related": "LinkedIn Learning",
+      "date": "Mar. 2020",
+      "description": [
+        "Learning C#"
+      ]
+    },
+    {
       "title": "Robot Arm Controller",
       "img": "logo",
       "url": "",
