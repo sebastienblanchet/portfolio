@@ -77,7 +77,7 @@
               :loading="loading"
               color="success"
               class="ma-2 white--text"
-              href="https://github.com/sebastienblanchet/Resume/releases/download/v1.1.0/Resume.pdf"
+              href="https://github.com/sebastienblanchet/Resume/releases/latest/download/Resume.pdf"
             >
               Resume
               <v-icon left>mdi-download</v-icon>

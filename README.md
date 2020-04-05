@@ -2,6 +2,7 @@
 
 <p align="start">
   <a href="https://travis-ci.org/sebastienblanchet/portfolio"><img src="https://travis-ci.org/sebastienblanchet/portfolio.svg?branch=master" alt="Build Status"></a>
+  <!-- <a href='https://coveralls.io/github/sebastienblanchet/portfolio?branch=master'><img src='https://coveralls.io/repos/github/sebastienblanchet/portfolio/badge.svg?branch=master' alt='Coverage Status' /></a> -->
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
 </p>
 

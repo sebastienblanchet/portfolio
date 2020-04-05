@@ -8,46 +8,16 @@
     "stack": "https://www.stackoverflow.com/users/9791070/seb-blanchet",
     "summary": "Software Engineer"
   },
-  "interests": [{
-      "icon": "mdi-coffee-maker",
-      "activity": "coffee"
-    },
-    {
-      "icon": "mdi-file-code-outline",
-      "activity": "coding"
-    },
-    {
-      "icon": "mdi-hockey-puck",
-      "activity": "hockey"
-    },
-    {
-      "icon": "mdi-football",
-      "activity": "football"
-    },
-    {
-      "icon": "mdi-golf",
-      "activity": "golf"
-    },
-    {
-      "icon": "mdi-bike",
-      "activity": "biking"
-    },
-    {
-      "icon": "mdi-brain",
-      "activity": "tinkering"
-    },
-    {
-      "icon": "mdi-memory",
-      "activity": "electronics"
-    },
-    {
-      "icon": "mdi-engine",
-      "activity": "mechanics"
-    },
-    {
-      "icon": "mdi-microsoft-xbox-controller",
-      "activity": "gaming"
-    }
+  "interests": ["coffee",
+    "coding",
+    "hockey",
+    "football",
+    "golf",
+    "biking",
+    "tinkering",
+    "electronics",
+    "mechanics",
+    "gaming"
   ],
   "skills": {
     "programming": [

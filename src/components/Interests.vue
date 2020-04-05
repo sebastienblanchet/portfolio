@@ -1,12 +1,12 @@
 <template>
   <v-container fluid>
     <v-row dense>
-      <v-col v-for="interest in interests" :key="interest.icon" :cols="4">
+      <v-col v-for="interest in interests" :key="interest" :cols="4">
         <v-row dense>
           <v-col cols="1">
-            <v-icon v-text="interest.icon"></v-icon>
+            <v-icon v-text="interestsIcons[interest]"></v-icon>
           </v-col>
-          <v-col>{{interest.activity}}</v-col>
+          <v-col>{{interest}}</v-col>
         </v-row>
       </v-col>
     </v-row>
@@ -15,10 +15,12 @@
 
 <script>
 import { interests } from "@/assets/resume.json";
+import { interestsIcons } from "@/assets/dictionaries.json";
 
 export default {
   data: () => ({
-    interests: interests
+    interests: interests,
+    interestsIcons: interestsIcons
   })
 };
 </script>
