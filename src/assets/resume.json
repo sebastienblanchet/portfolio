@@ -28,10 +28,10 @@
       "TypeScript",
       "Python",
       "Ruby",
-      "PHP",
       "MATLAB",
       "HTML5",
-      "CSS3"
+      "CSS3",
+      "GraphQL"
     ],
     "frameworks": [
       "Angular",
@@ -39,7 +39,7 @@
       "Node.js",
       ".NET",
       "Rails",
-      "Laravel"
+      "Jest"
     ],
     "libraries": [
       "React",
