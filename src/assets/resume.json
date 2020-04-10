@@ -57,9 +57,7 @@
       "Texas Instrument",
       "Arduino",
       "Raspberry Pi",
-      "Xilinx",
-      "FPGA",
-      "VHDL"
+      "Xilinx"
     ],
     "simulation": [
       "LabVIEW - FPGA / RT",
@@ -75,13 +73,7 @@
       "macOS",
       "Linux",
       "CentOS",
-      "RHEL",
-      "RTOS",
-      "FreeRTOS",
-      "Phar Lap ETS",
-      "TI - RTOS",
-      "QNX",
-      "UNIX"
+      "RHEL"
     ],
     "protocols": [
       "TCP / IP",
@@ -119,7 +111,15 @@
       "CI",
       "CD",
       "API",
-      "REST"
+      "REST",
+      "RTOS",
+      "FreeRTOS",
+      "Phar Lap ETS",
+      "TI - RTOS",
+      "QNX",
+      "UNIX",
+      "FPGA",
+      "VHDL"
     ],
     "other": [
       "Git",
@@ -165,10 +165,7 @@
         "Node.js",
         "Vue.js",
         "HTML5/CSS3",
-        "MongoDB",
-        "MySQL",
-        "Linux",
-        "Git"
+        "GraphQL"
       ]
     },
     {

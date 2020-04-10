@@ -10,7 +10,7 @@
       <v-col cols="12" md="4" class="text-center">
         <b>
           <IconItem url="https://vuejs.org/v2/guide/" icon="mdi-vuejs" text="vue.js guide" />
-          {{ new Date().getFullYear() }} - v{{version}} - {{$vuetify.breakpoint.name}}
+          {{ new Date().getFullYear() }} - v{{version}}
         </b>
       </v-col>
       <v-col cols="12" md="4" class="text-center text-md-right">

@@ -13,7 +13,7 @@ export default {
   }),
   created() {
     var md = marked(readme);
-    md = this.replaceTag(md, "code", "kdb");
+    // md = this.replaceTag(md, "code", "kdb");
     md = this.replaceTag(md, "h2", "h3");
     md = this.replaceTag(md, "h1", "h2");
     this.md = md;

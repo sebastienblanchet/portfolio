@@ -7,8 +7,8 @@
         </v-btn>
       </template>
       <v-card>
-        <v-card-title class="headline">{{project.related}}</v-card-title>
-        <v-card-text v-for="desc in project.description" :key="desc">{{desc}}</v-card-text>
+        <v-card-title class="headline">{{obj.employer}}</v-card-title>
+        <v-card-text v-for="desc in obj.description" :key="desc">{{desc}}</v-card-text>
       </v-card>
     </v-dialog>
   </div>
@@ -20,7 +20,7 @@ import IconItem from "@/components/ui/IconItem";
 
 export default {
   props: {
-    project: Object
+    obj: Object
   },
   components: {
     IconItem

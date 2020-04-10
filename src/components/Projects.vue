@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-row dense>
-      <v-col v-for="project in projects" :key="project.name" cols="12" sm="4" md="3" lg="2">
+      <v-col v-for="project in projects" :key="project.name" cols="12" sm="4" md="3" >
         <v-hover v-slot:default="{ hover }">
           <v-card :elevation="hover ? 12 : 2">
             <v-img
@@ -29,7 +29,7 @@
                 <IconItem icon="mdi-link-variant" :url="project.url" text="see project link" />
               </div>
               <v-spacer></v-spacer>
-              <Dialog :project="project" />
+              <Dialog :obj="project" />
             </v-card-actions>
           </v-card>
         </v-hover>
