@@ -8,7 +8,7 @@
         <!-- <Rating color="red" :rating="4.5" size="20" /> -->
         <!-- <Rating color="red" :rating="3" size="20" /> -->
         <v-row align="start">
-          <v-col cols="1" v-for="itm in skills.programming" :key="itm">
+          <v-col cols="4" md="1" v-for="itm in skills.programming" :key="itm">
             <SkillsItem :name="itm" />
           </v-col>
         </v-row>
@@ -18,7 +18,7 @@
       <v-card-title>Frameworks</v-card-title>
       <v-card-text>
         <v-row align="start">
-          <v-col cols="1" v-for="itm in skills.frameworks" :key="itm">
+          <v-col cols="4" md="1" v-for="itm in skills.frameworks" :key="itm">
             <SkillsItem :name="itm" />
           </v-col>
         </v-row>
@@ -28,7 +28,7 @@
       <v-card-title>Libraries</v-card-title>
       <v-card-text>
         <v-row align="start">
-          <v-col cols="1" v-for="itm in skills.libraries" :key="itm">
+          <v-col cols="4" md="1" v-for="itm in skills.libraries" :key="itm">
             <SkillsItem :name="itm" />
           </v-col>
         </v-row>
@@ -38,7 +38,7 @@
       <v-card-title>Operating Systems</v-card-title>
       <v-card-text>
         <v-row align="start">
-          <v-col cols="1" v-for="itm in skills.os" :key="itm">
+          <v-col cols="4" md="1" v-for="itm in skills.os" :key="itm">
             <SkillsItem :name="itm" />
           </v-col>
         </v-row>
@@ -48,7 +48,7 @@
       <v-card-title>Hardware</v-card-title>
       <v-card-text>
         <v-row align="start">
-          <v-col cols="1" v-for="itm in skills.hardware" :key="itm">
+          <v-col cols="4" md="1" v-for="itm in skills.hardware" :key="itm">
             <SkillsItem :name="itm" />
           </v-col>
         </v-row>
@@ -58,7 +58,7 @@
       <v-card-title>Other</v-card-title>
       <v-card-text>
         <v-row align="start">
-          <v-col cols="1" v-for="itm in skills.other" :key="itm">
+          <v-col cols="4" md="1" v-for="itm in skills.other" :key="itm">
             <SkillsItem :name="itm" />
           </v-col>
         </v-row>

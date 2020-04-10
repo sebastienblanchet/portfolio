@@ -23,7 +23,7 @@
           <v-card :elevation="hover ? 12 : 2">
             <v-card-title class="headline">{{job.title}}</v-card-title>
             <v-list-item>
-              <v-list-item-icon>
+            <v-list-item-icon>
                 <IconItem
                   size="20"
                   icon="mdi-briefcase-outline"

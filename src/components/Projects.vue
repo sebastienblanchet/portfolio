@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-row dense>
-      <v-col v-for="project in projects" :key="project.name" :cols="2">
+      <v-col v-for="project in projects" :key="project.name" cols="12" sm="4" md="3" lg="2">
         <v-hover v-slot:default="{ hover }">
           <v-card :elevation="hover ? 12 : 2">
             <v-img

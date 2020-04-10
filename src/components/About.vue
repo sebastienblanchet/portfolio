@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row>
-      <v-col cols="3 mx-auto">
+      <v-col cols="auto">
         <v-card>
           <v-card-title class="primary">
             <span class="headline white--text">{{about.name}}</span>

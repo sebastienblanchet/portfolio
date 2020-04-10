@@ -11,5 +11,10 @@ module.exports = {
         loader: "raw-loader"
       }]
     }
+  },
+  // https://github.com/vuejs-templates/webpack/issues/1205
+  // allow remote raspberry pi access
+  devServer: {
+    disableHostCheck: true
   }
 }

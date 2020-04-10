@@ -1,16 +1,14 @@
 <template>
-  <v-container fluid>
-    <v-row dense>
-      <v-col v-for="interest in interests" :key="interest" :cols="4">
-        <v-row dense>
-          <v-col cols="1 mx-auto">
-            <v-icon v-text="interestsIcons[interest]"></v-icon>
-          </v-col>
-          <v-col cols="mx-auto">{{interest}}</v-col>
-        </v-row>
-      </v-col>
-    </v-row>
-  </v-container>
+  <v-row dense>
+    <v-col v-for="interest in interests" :key="interest" cols="12" md="4">
+      <v-row dense>
+        <v-col cols="auto mx-5">
+          <v-icon v-text="interestsIcons[interest]"></v-icon>
+        </v-col>
+        <v-col cols="auto">{{interest}}</v-col>
+      </v-row>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
