@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row>
-      <v-col>
+      <v-col cols="3 mx-auto">
         <v-card>
           <v-card-title class="primary">
             <span class="headline white--text">{{about.name}}</span>
@@ -14,13 +14,31 @@
           <v-card-text class="text-center">
             <v-row>
               <v-col cols="mx-auto">
-                <IconItem size="50" icon="mdi-github" :url="about.git" color="grey darken-4" />
+                <IconItem
+                  size="50"
+                  icon="mdi-github"
+                  :url="about.git"
+                  color="grey darken-4"
+                  text="see GitHub profile"
+                />
               </v-col>
               <v-col cols="mx-auto">
-                <IconItem size="50" icon="mdi-linkedin" :url="about.li" color="indigo" />
+                <IconItem
+                  size="50"
+                  icon="mdi-linkedin"
+                  :url="about.li"
+                  color="indigo"
+                  text="see LinkedIn profile"
+                />
               </v-col>
               <v-col cols="mx-auto">
-                <IconItem size="50" icon="mdi-stack-overflow" :url="about.stack" color="orange" />
+                <IconItem
+                  size="50"
+                  icon="mdi-stack-overflow"
+                  :url="about.stack"
+                  color="orange"
+                  text="see stack overflow profile"
+                />
               </v-col>
             </v-row>
           </v-card-text>
@@ -46,7 +64,7 @@
           </v-list>
         </v-card>
       </v-col>
-      <v-col cols="8">
+      <v-col cols="mx-auto">
         <v-card class="mx-auto">
           <!-- <v-card-title>Message</v-card-title -->
           <v-card-text>

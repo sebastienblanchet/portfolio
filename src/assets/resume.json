@@ -39,7 +39,8 @@
       "Node.js",
       ".NET",
       "Rails",
-      "Jest"
+      "Jest",
+      "Mocha"
     ],
     "libraries": [
       "React",

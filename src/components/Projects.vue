@@ -15,13 +15,18 @@
             </v-img>
             <v-card-actions>
               <div v-show="isValid(project.download)">
-                <IconItem icon="mdi-download" :url="project.download" :new="false" />
+                <IconItem
+                  icon="mdi-download"
+                  :url="project.download"
+                  :new="false"
+                  text="download project artifacts"
+                />
               </div>
               <div v-show="isValid(project.code)">
-                <IconItem icon="mdi-code-tags" :url="project.code" />
+                <IconItem icon="mdi-code-tags" :url="project.code" text="see project code" />
               </div>
               <div v-show="isValid(project.url)">
-                <IconItem icon="mdi-link-variant" :url="project.url" />
+                <IconItem icon="mdi-link-variant" :url="project.url" text="see project link" />
               </div>
               <v-spacer></v-spacer>
               <Dialog :project="project" />

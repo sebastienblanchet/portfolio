@@ -2,8 +2,8 @@
   <div>
     <v-dialog v-model="dialog" scrollable max-width="500">
       <template v-slot:activator="{ on }">
-        <v-btn color="secondary" dark text icon v-on="on">
-          <v-icon>mdi-dots-horizontal</v-icon>
+        <v-btn text icon v-on="on">
+          <IconItem text="see details" icon="mdi-dots-horizontal" />
         </v-btn>
       </template>
       <v-card>
@@ -16,9 +16,14 @@
 
 
 <script>
+import IconItem from "@/components/ui/IconItem";
+
 export default {
   props: {
     project: Object
+  },
+  components: {
+    IconItem
   },
   data() {
     return {

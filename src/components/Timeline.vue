@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <v-timeline>
+  <v-container fluid>
+    <v-timeline :dense="$vuetify.breakpoint.smAndDown">
       <v-timeline-item v-for="job in jobs" :key="job.title" large>
         <template v-slot:icon>
           <v-avatar color="white">
@@ -9,27 +9,58 @@
         </template>
         <template v-slot:opposite>
           <span>
-            <v-icon>mdi-calendar-month-outline</v-icon>
-            {{job.start}} - {{job.end}}
+            <IconItem size="20" icon="mdi-calendar-month-outline" text="duration" />
+            <span class="subtitle-2">{{job.start}} - {{job.end}}</span>
           </span>
-          <!-- TODO fix this -->
-          <!-- <IconItem icon="mdi-map-marker" :url="getGoogleMaps(job.location)" :text="job.location" /> -->
+          <!-- <v-list-item>
+            <v-list-item-icon>
+              <IconItem size="20" icon="mdi-calendar-month-outline" text="division" />
+            </v-list-item-icon>
+            <v-list-item-subtitle>{{job.start}} - {{job.end}}</v-list-item-subtitle>
+          </v-list-item>-->
         </template>
         <v-hover v-slot:default="{ hover }">
           <v-card :elevation="hover ? 12 : 2">
             <v-card-title class="headline">{{job.title}}</v-card-title>
-            <v-card-text>
-              {{job.employer}}
-              <IconItem size="20" icon="mdi-link-variant" :url="job.url" />
-            </v-card-text>
-            <v-card-text>{{job.division}}</v-card-text>
-            <v-card-text>{{job.technologies | arr2Csv}}</v-card-text>
-            <!-- TODO click for more -->
+            <v-list-item>
+              <v-list-item-icon>
+                <IconItem
+                  size="20"
+                  icon="mdi-briefcase-outline"
+                  :url="job.url"
+                  text="see company web page"
+                />
+              </v-list-item-icon>
+              <v-list-item-subtitle>{{job.employer}}</v-list-item-subtitle>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-icon>
+                <IconItem size="20" icon="mdi-account-group" text="division" />
+              </v-list-item-icon>
+              <v-list-item-subtitle>{{job.division}}</v-list-item-subtitle>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-icon>
+                <IconItem
+                  size="20"
+                  icon="mdi-map-marker"
+                  :url="getGoogleMaps(job.location)"
+                  text="open location in goole maps"
+                />
+              </v-list-item-icon>
+              <v-list-item-subtitle>{{job.location}}</v-list-item-subtitle>
+            </v-list-item>
+            <v-list-item v-if="job.technologies.length">
+              <v-list-item-icon>
+                <IconItem size="20" icon="mdi-code-tags" text="technologies used" />
+              </v-list-item-icon>
+              <v-list-item-subtitle>{{job.technologies | arr2Csv}}</v-list-item-subtitle>
+            </v-list-item>
           </v-card>
         </v-hover>
       </v-timeline-item>
     </v-timeline>
-  </div>
+  </v-container>
 </template>
 
 <script>
