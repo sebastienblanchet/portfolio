@@ -1,8 +1,12 @@
-## Portfolio
+# Portfolio
 
-[![Build Status](https://travis-ci.org/sebastienblanchet/portfolio.svg?branch=master)](https://travis-ci.org/sebastienblanchet/portfolio)
+<p align="start">
+  <a href="https://travis-ci.org/sebastienblanchet/portfolio"><img src="https://travis-ci.org/sebastienblanchet/portfolio.svg?branch=master" alt="Build Status"></a>
+  <!-- <a href='https://coveralls.io/github/sebastienblanchet/portfolio?branch=master'><img src='https://coveralls.io/repos/github/sebastienblanchet/portfolio/badge.svg?branch=master' alt='Coverage Status' /></a> -->
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
+</p>
 
-#### Sebastien Blanchet
+_Sebastien Blanchet_
 
 Running [live here!](https://sebastienblanchet.github.io/portfolio/)
 
@@ -36,37 +40,23 @@ Key repository files are listed below:
 
 ~/portfolio/
 │
-├── public/
-│   ├── favicon.ico
-│   └── index.html
+├── public/ # static files
 ├── src/
-│   ├── App.vue
+│   ├── App.vue # single page application layout
 │   ├── assets/
-│   │   ├── dictionaries.json
-│   │   ├── img/
-│   │   ├── projects.json
-│   │   └── resume.json
-│   ├── components/
-│   │   ├── About.vue
-│   │   ├── Education.vue
-│   │   ├── Footer.vue
-│   │   ├── Info.vue
-│   │   ├── Interests.vue
-│   │   ├── Navbar.vue
-│   │   ├── Projects.vue
-│   │   ├── Section.vue
-│   │   ├── Skills.vue
-│   │   ├── Timeline.vue
-│   │   └── ui/
-│   │       ├── Dialog.vue
-│   │       ├── IconItem.vue
-│   │       ├── Rating.vue
-│   │       ├── SidebarItem.vue
-│   │       └── SkillsItem.vue
-│   ├── main.js
-│   ├── plugins/
-│   │   └── vuetify.js
-│   └── utils
-│       └── filters.js
-└── tests
+│   │   ├── **.json # core JSON content for page render
+│   │   └──── img/ # dynamic images
+│   ├── components/ # Section level components
+│   │   └── ui/ # common UI utilities
+│   ├── main.js  # core app bootstrap
+│   ├── plugins/ #plugin level overides
+│   └── utils/  # common script utils
+└── tests/ # mocha UI test definitions
+
 ```
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
+
+*Copyright (c) 2020-present Sebastien Blanchet*

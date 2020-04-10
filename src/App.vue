@@ -3,9 +3,11 @@
     <Navbar :sections="sections" />
 
     <v-content>
-      <div v-for="section in sections" :key="section">
-        <Section :str="section" />
-      </div>
+      <v-container fluid>
+        <div v-for="section in sections" :key="section">
+          <Section :str="section" />
+        </div>
+      </v-container>
     </v-content>
 
     <Footer />

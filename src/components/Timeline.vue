@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <v-timeline>
+  <v-container fluid>
+    <v-card elevation="0" class="d-md-flex justify-center">
+    <v-timeline :dense="$vuetify.breakpoint.smAndDown">
       <v-timeline-item v-for="job in jobs" :key="job.title" large>
         <template v-slot:icon>
           <v-avatar color="white">
@@ -9,41 +10,35 @@
         </template>
         <template v-slot:opposite>
           <span>
-            <v-icon>mdi-calendar-month-outline</v-icon>
-            {{job.start}} - {{job.end}}
+            <IconItem size="20" icon="mdi-calendar-month-outline" text="duration" />
+            <span class="subtitle-2">{{job.start}} - {{job.end}}</span>
           </span>
-          <!-- TODO fix this -->
-          <!-- <IconItem icon="mdi-map-marker" :url="getGoogleMaps(job.location)" :text="job.location" /> -->
         </template>
-        <v-card class="elevation-2">
-          <v-card-title class="headline">{{job.title}}</v-card-title>
-          <v-card-text>
-            {{job.employer}}
-            <IconItem size="20" icon="mdi-link-variant" :url="job.url" />
-          </v-card-text>
-          <v-card-text>{{job.division}}</v-card-text>
-          <v-card-text>{{job.technologies | arr2Csv}}</v-card-text>
-          <!-- TODO click for more -->
-        </v-card>
+        <TimelineItem :job="job" />
       </v-timeline-item>
     </v-timeline>
-  </div>
+    </v-card>
+  </v-container>
 </template>
 
 <script>
+import TimelineItem from "@/components/ui/TimelineItem";
 import IconItem from "@/components/ui/IconItem";
+// import Dialog from "@/components/ui/Dialog";
 import { jobs } from "@/assets/resume.json";
 
 export default {
   components: {
-    IconItem
+    IconItem,
+    TimelineItem
+    // Dialog
   },
   data: () => ({
     jobs: jobs
   }),
   methods: {
     getGoogleMaps(str) {
-      // regex to replace spaces with + for map call
+      // regex to replace spaces with + for map query
       str = str.replace(/\s/g, "+");
       return `https://www.google.ca/maps/place/${str}`;
     }

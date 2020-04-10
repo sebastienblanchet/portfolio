@@ -1,20 +1,30 @@
 <template>
   <v-btn
     text
-    class="mx-0 font-weight-bold"
+    class="px-1 py-0 font-weight-bold"
     @click="goTo()"
     style="text-transform:none !important;"
-  >{{section}}</v-btn>
+  >
+    <div class="secondary--text">
+      <v-icon class="ma-1" v-text="sectionDict[section]"></v-icon>
+      {{section}}
+    </div>
+  </v-btn>
 </template>
 
 
 <script>
+import { sectionDict } from "@/assets/dictionaries.json";
+
 export default {
   name: "Goto",
   props: {
     // required
     section: String
   },
+  data: () => ({
+    sectionDict: sectionDict
+  }),
   computed: {},
   methods: {
     goTo() {

@@ -1,9 +1,17 @@
 <template>
   <div>
-    <v-navigation-drawer v-model="drawer" app clipped>
+    <v-navigation-drawer v-model="drawer" app clipped mini-variant expand-on-hover>
+      <v-list-item class="px-2">
+        <v-list-item-avatar>
+          <v-img src="@/assets/img/me.png"></v-img>
+        </v-list-item-avatar>
+
+        <v-list-item-title>{{about.name}}</v-list-item-title>
+      </v-list-item>
+      <v-divider></v-divider>
       <v-list dense>
         <div v-for="section in sections" :key="section">
-          <SidebarItem :icon="getIcon(section)" :section="section" />
+          <SidebarItem :icon="sectionDict[section]" :section="section" />
         </div>
       </v-list>
     </v-navigation-drawer>
@@ -29,6 +37,7 @@
 
 <script>
 import SidebarItem from "@/components/ui/SidebarItem";
+import { about } from "@/assets/resume.json";
 import { sectionDict } from "@/assets/dictionaries.json";
 
 export default {
@@ -39,13 +48,11 @@ export default {
     SidebarItem
   },
   data: () => ({
-    drawer: null
+    drawer: null,
+    sectionDict: sectionDict,
+    about: about
   }),
   methods: {
-    getIcon(sect) {
-      const i = sectionDict[sect];
-      return i;
-    },
     goHome() {
       this.$vuetify.goTo("#top");
     }

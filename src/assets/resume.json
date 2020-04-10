@@ -8,46 +8,16 @@
     "stack": "https://www.stackoverflow.com/users/9791070/seb-blanchet",
     "summary": "Software Engineer"
   },
-  "interests": [{
-      "icon": "mdi-coffee-maker",
-      "activity": "coffee"
-    },
-    {
-      "icon": "mdi-file-code-outline",
-      "activity": "coding"
-    },
-    {
-      "icon": "mdi-hockey-puck",
-      "activity": "hockey"
-    },
-    {
-      "icon": "mdi-football",
-      "activity": "football"
-    },
-    {
-      "icon": "mdi-golf",
-      "activity": "golf"
-    },
-    {
-      "icon": "mdi-bike",
-      "activity": "biking"
-    },
-    {
-      "icon": "mdi-brain",
-      "activity": "tinkering"
-    },
-    {
-      "icon": "mdi-memory",
-      "activity": "electronics"
-    },
-    {
-      "icon": "mdi-engine",
-      "activity": "mechanics"
-    },
-    {
-      "icon": "mdi-microsoft-xbox-controller",
-      "activity": "gaming"
-    }
+  "interests": ["coffee",
+    "coding",
+    "hockey",
+    "football",
+    "golf",
+    "biking",
+    "tinkering",
+    "electronics",
+    "mechanics",
+    "gaming"
   ],
   "skills": {
     "programming": [
@@ -58,10 +28,10 @@
       "TypeScript",
       "Python",
       "Ruby",
-      "PHP",
       "MATLAB",
       "HTML5",
-      "CSS3"
+      "CSS3",
+      "GraphQL"
     ],
     "frameworks": [
       "Angular",
@@ -69,7 +39,8 @@
       "Node.js",
       ".NET",
       "Rails",
-      "Laravel"
+      "Jest",
+      "Mocha"
     ],
     "libraries": [
       "React",
@@ -86,9 +57,7 @@
       "Texas Instrument",
       "Arduino",
       "Raspberry Pi",
-      "Xilinx",
-      "FPGA",
-      "VHDL"
+      "Xilinx"
     ],
     "simulation": [
       "LabVIEW - FPGA / RT",
@@ -104,13 +73,7 @@
       "macOS",
       "Linux",
       "CentOS",
-      "RHEL",
-      "RTOS",
-      "FreeRTOS",
-      "Phar Lap ETS",
-      "TI - RTOS",
-      "QNX",
-      "UNIX"
+      "RHEL"
     ],
     "protocols": [
       "TCP / IP",
@@ -134,17 +97,29 @@
       "Atlassian",
       "Trac",
       "Coverity",
-      "OpenShift(containerization)"
+      "OpenShift"
     ],
     "concepts": [
       "embedded discrete and optimal control",
       "PID",
       "DSP",
-      "HIL / SIL",
+      "HIL",
+      "SIL",
       "TDD",
       "OOP",
       "DSA",
-      "CI / CD"
+      "CI",
+      "CD",
+      "API",
+      "REST",
+      "RTOS",
+      "FreeRTOS",
+      "Phar Lap ETS",
+      "TI - RTOS",
+      "QNX",
+      "UNIX",
+      "FPGA",
+      "VHDL"
     ],
     "other": [
       "Git",
@@ -163,7 +138,7 @@
     "url": "https://www.uwaterloo.ca",
     "name": "University of Waterloo",
     "degree": "Bachelor of Applied Science with Distinction",
-    "comment": "Honors Mechanical Engineering Co-op, GPA: 3.5/4.0",
+    "comment": "Honors Mechanical Engineering Coop, GPA: 3.5/4.0",
     "start": "Sept. 2013",
     "end": "Apr. 2019"
   }],
@@ -190,10 +165,7 @@
         "Node.js",
         "Vue.js",
         "HTML5/CSS3",
-        "MongoDB",
-        "MySQL",
-        "Linux",
-        "Git"
+        "GraphQL"
       ]
     },
     {
@@ -201,7 +173,7 @@
       "url": "https://www.tesla.com/",
       "employer": "Tesla",
       "location": "Palo Alto, CA, USA",
-      "title": "Firmware Engineering (Co-op)",
+      "title": "Firmware Engineering (Coop)",
       "division": "Energy Products",
       "start": "Sept. 2018",
       "end": "Dec. 2018",
@@ -228,7 +200,7 @@
       "url": "https://www.apple.com",
       "employer": "Apple",
       "location": "Cupertino, CA, USA",
-      "title": "Controls Engineering (Co-op)",
+      "title": "Controls Engineering (Coop)",
       "division": "Special Projects Group",
       "start": "Aug. 2017",
       "end": "Aug. 2018",
@@ -260,7 +232,7 @@
       "url": "http://www.altaeros.com",
       "employer": "Altaeros",
       "location": "Boston, MA, USA",
-      "title": "Systems Engineering (Co-op)",
+      "title": "Systems Engineering (Coop)",
       "division": "R & D",
       "start": "Jan. 2017",
       "end": "Apr. 2017",
@@ -280,7 +252,7 @@
       "url": "https://www.ontariodie.com",
       "employer": "Ontario Die International",
       "location": "Waterloo, ON, CAN",
-      "title": "Mechanical Engineering (Co-op)",
+      "title": "Mechanical Engineering (Coop)",
       "division": "R & D",
       "start": "May 2016",
       "end": "Aug. 2016",
@@ -300,7 +272,7 @@
       "url": "http://www.pwc.ca",
       "employer": "Pratt & Whitney Canada",
       "location": "Mississauga, ON, CAN",
-      "title": "Project Management (Co-op)",
+      "title": "Project Management (Coop)",
       "division": "Turbofan Operations",
       "start": "Sept. 2015",
       "end": "Dec. 2015",
@@ -316,7 +288,7 @@
       "url": "http://www.skyjack.com",
       "employer": "Linamar",
       "location": "Guelph, ON, CAN",
-      "title": "Manufacturing Engineering (Co-op)",
+      "title": "Manufacturing Engineering (Coop)",
       "division": "Skyjack",
       "start": "Jan. 2015",
       "end": "Apr. 2015",
@@ -331,7 +303,7 @@
       "url": "http://www.norarc.com/en/",
       "employer": "Nor-Arc",
       "location": "Earlton, ON, CAN",
-      "title": "Junior Detailer (Co-op)",
+      "title": "Junior Detailer (Coop)",
       "division": "Steel Fabricators",
       "start": "June 2014",
       "end": "Aug. 2014",

@@ -1,21 +1,22 @@
 <template>
-  <v-footer app dark class="secondary">
+  <v-footer
+  app
+  :inset="!$vuetify.breakpoint.smAndDown"
+  :absolute="$vuetify.breakpoint.smAndDown"
+  dark
+  class="secondary">
     <v-row align="center" class="caption">
-      <v-col cols="auto">{{author.name}}</v-col>
-      <v-spacer></v-spacer>
-      <v-col cols="auto">
+      <v-col cols="12" md="4" class="text-center text-md-left">{{author.name}}</v-col>
+      <v-col cols="12" md="4" class="text-center">
         <b>
-          <IconItem size="18" url="https://vuejs.org/v2/guide/" icon="mdi-vuejs" />
+          <IconItem url="https://vuejs.org/v2/guide/" icon="mdi-vuejs" text="vue.js guide" />
           {{ new Date().getFullYear() }} - v{{version}}
         </b>
       </v-col>
-      <v-spacer></v-spacer>
-      <v-col cols="auto">
-        <v-btn class="dark icon" @click="invertTheme()" text icon :size="18">
-          <v-icon size="18px" v-text="theme"></v-icon>
-        </v-btn>
-        <IconItem size="18" :url="github" icon="mdi-code-tags" />
-        <IconItem size="18" :url="bugs" icon="mdi-bug-outline" />
+      <v-col cols="12" md="4" class="text-center text-md-right">
+        <IconItem @icon-click="invertTheme" size="18" :icon="theme" text="invert theme" />
+        <IconItem size="18" :url="github" icon="mdi-code-tags" text="report a bug" />
+        <IconItem size="18" :url="bugs" icon="mdi-bug-outline" text="see source code" />
       </v-col>
     </v-row>
   </v-footer>

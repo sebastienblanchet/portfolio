@@ -1,8 +1,21 @@
 <template>
-  <v-btn :href="url" target="_blank" :size="size" text icon style="text-transform:none !important;">
-    <v-icon :size="size" v-text="icon" :color="color"></v-icon>
-    {{text}}
-  </v-btn>
+  <v-tooltip top>
+    <template v-slot:activator="{ on }">
+      <v-btn
+        v-on="on"
+        :href="url"
+        target="_blank"
+        :size="size"
+        @click="$emit('icon-click')"
+        text
+        icon
+        style="text-transform:none !important;"
+      >
+        <v-icon :size="size" v-text="icon" :color="color"></v-icon>
+      </v-btn>
+    </template>
+    <span>{{text | title }}</span>
+  </v-tooltip>
 </template>
 
 
@@ -24,12 +37,14 @@ export default {
       default: "",
       type: String
     },
-    // new tab
     new: {
       default: true,
       type: Boolean
     }
   },
+  data: () => ({
+    show: false
+  }),
   computed: {}
 };
 </script>
