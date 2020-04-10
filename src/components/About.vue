@@ -54,7 +54,9 @@
             <!-- <p>adjective</p> -->
             <div class="text--primary">
               I coded this entirely from scratch with the help of my new favorite JavaScript framework/library
-              <v-icon size="24px" color="green darken-1">mdi-vuejs</v-icon>
+              <v-avatar class="mx-1 my-1" color="white" tile size="24">
+                <v-img text src="@/assets/img/logo.png"></v-img>
+              </v-avatar>
               <b>Vue.js</b>
             </div>
           </v-card-text>

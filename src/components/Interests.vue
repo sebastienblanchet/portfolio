@@ -3,10 +3,10 @@
     <v-row dense>
       <v-col v-for="interest in interests" :key="interest" :cols="4">
         <v-row dense>
-          <v-col cols="1">
+          <v-col cols="1 mx-auto">
             <v-icon v-text="interestsIcons[interest]"></v-icon>
           </v-col>
-          <v-col>{{interest}}</v-col>
+          <v-col cols="mx-auto">{{interest}}</v-col>
         </v-row>
       </v-col>
     </v-row>

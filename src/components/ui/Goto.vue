@@ -1,5 +1,10 @@
 <template>
-  <v-btn text class="mx-0 font-weight-bold" @click="goTo()" style="text-transform:none !important;">
+  <v-btn
+    text
+    class="px-1 py-0 font-weight-bold"
+    @click="goTo()"
+    style="text-transform:none !important;"
+  >
     <div class="secondary--text">
       <v-icon class="ma-1" v-text="sectionDict[section]"></v-icon>
       {{section}}

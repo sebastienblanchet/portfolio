@@ -104,17 +104,21 @@
       "Atlassian",
       "Trac",
       "Coverity",
-      "OpenShift(containerization)"
+      "OpenShift"
     ],
     "concepts": [
       "embedded discrete and optimal control",
       "PID",
       "DSP",
-      "HIL / SIL",
+      "HIL",
+      "SIL",
       "TDD",
       "OOP",
       "DSA",
-      "CI / CD"
+      "CI",
+      "CD",
+      "API",
+      "REST"
     ],
     "other": [
       "Git",
