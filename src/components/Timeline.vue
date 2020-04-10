@@ -14,7 +14,7 @@
             <span class="subtitle-2">{{job.start}} - {{job.end}}</span>
           </span>
         </template>
-            <TimelineItem :job="job" />
+        <TimelineItem :job="job" />
       </v-timeline-item>
     </v-timeline>
     </v-card>
