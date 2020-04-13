@@ -50,7 +50,8 @@
       "MongoDB",
       "Express",
       "Vuetify",
-      "boost"
+      "boost",
+      "GNU"
     ],
     "hardware": [
       "NI",
