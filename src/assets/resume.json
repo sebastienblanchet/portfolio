@@ -49,7 +49,8 @@
       "MySQL",
       "MongoDB",
       "Express",
-      "Vuetify"
+      "Vuetify",
+      "boost"
     ],
     "hardware": [
       "NI",
