@@ -157,8 +157,8 @@
         "Developing EEC communication software with modern web technologies (Node.js, Vue.js, HTML5/CSS3)",
         "Contributing to multi-threaded C++/C# for CentOS/RHEL Linux server-side applications",
         "Using internal TCP/UDP sockets programming API to communicate with MySQL/MongoDB databases",
-        "Integrating fully Agile work-flow using Git, Jenkins, various unit and e2e testing frameworks ",
-        "Designing embedded C drivers on RTOS Linux for high-speed EEC data acquisition and processing"
+        "Designing embedded C drivers on RTOS Linux for high-speed EEC data acquisition and processing",
+        "Integrating fully Agile work-flow using Git, Jenkins, various unit and e2e testing frameworks "
       ],
       "technologies": [
         "C",
