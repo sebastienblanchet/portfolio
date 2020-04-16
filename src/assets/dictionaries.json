@@ -1,11 +1,11 @@
 {
   "sectionDict": {
-    "About": "mdi-human-greeting",
-    "Timeline": "mdi-timeline-text-outline",
-    "Skills": "mdi-laptop-mac",
-    "Education": "mdi-school-outline",
-    "Projects": "mdi-code-braces",
-    "Info": "mdi-information-outline"
+    "about": "mdi-human-greeting",
+    "timeline": "mdi-timeline-text-outline",
+    "skills": "mdi-laptop-mac",
+    "education": "mdi-school-outline",
+    "projects": "mdi-code-braces",
+    "info": "mdi-information-outline"
   },
   "logoDict": {
     "C": "https://cdn.worldvectorlogo.com/logos/c-2975.svg",

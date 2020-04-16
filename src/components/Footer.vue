@@ -8,9 +8,8 @@
     <v-row align="center" class="caption">
       <v-col cols="12" md="4" class="text-center text-md-left font-weight-bold">{{author.name}}</v-col>
       <v-col cols="12" md="4" class="text-center font-weight-bold">
-          <IconItem url="https://vuejs.org/v2/guide/" icon="mdi-vuejs" text="vue.js guide" />
-          {{ new Date().getFullYear() }} - v{{version}}
-          <span class="secondary--text">{{size}}</span>
+        <IconItem url="https://vuejs.org/v2/guide/" icon="mdi-vuejs" text="vue.js guide" />
+        {{ new Date().getFullYear() }} - v{{version}}
       </v-col>
       <v-col cols="12" md="4" class="text-center text-md-right">        
         <IconItem @icon-click="invertLang" size="18" :icon="lang" text="invert lang" />

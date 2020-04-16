@@ -6,7 +6,7 @@
         <v-expansion-panel-header class="headline font-weight-bold">
           <div>
             <v-icon class="ma-2" v-text="sectionDict[str]" style="vertical-align: middle;"></v-icon>
-            <span class="secondary--text" style="vertical-align: middle;">{{str}}</span>
+            <span class="secondary--text" style="vertical-align: middle;">{{title | title}}</span>
           </div>
           <v-spacer />
         </v-expansion-panel-header>
@@ -19,6 +19,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import About from "@/components/About";
 import Interests from "@/components/Interests";
 import Timeline from "@/components/Timeline";
@@ -27,6 +28,7 @@ import Education from "@/components/Education";
 import Projects from "@/components/Projects";
 import Info from "@/components/Info";
 import { sectionDict } from "@/assets/dictionaries.json";
+// import translation from "@/assets/translation.json";
 
 export default {
   components: {
@@ -38,27 +40,43 @@ export default {
     Projects,
     Info
   },
-  data: () => ({
-    panel: [0, 1],
-    sectionDict: sectionDict,
-    dict: {
-      About: About,
-      Interests: Interests,
-      Timeline: Timeline,
-      Skills: Skills,
-      Education: Education,
-      Projects: Projects,
-      Info: Info
-    }
-  }),
   props: {
     str: String
   },
+  data: () => ({
+    panel: [0, 1],
+    sectionDict: sectionDict,
+    title: "",
+    dict: {
+      about: About,
+      interests: Interests,
+      timeline: Timeline,
+      skills: Skills,
+      education: Education,
+      projects: Projects,
+      info: Info
+    }
+  }),
+  created() {
+    this.setTitle();
+  },
   computed: {
+    ...mapGetters([
+      "lang"
+    ]),
     component: function() {
       return this.dict[this.str];
     }
   },
-  methods: {}
+  methods: {
+    setTitle(){
+      this.title = this.translate(this.str);
+    }
+  },
+  watch: {
+    lang() {
+      this.setTitle();
+    }
+  }
 };
 </script>
