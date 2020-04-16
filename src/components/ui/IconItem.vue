@@ -11,7 +11,8 @@
         icon
         style="text-transform:none !important;"
       >
-        <v-icon :size="size" v-text="icon" :color="color"></v-icon>
+        <v-icon v-if="isValidIcon" :size="size" v-text="icon" :color="color"></v-icon>
+        <span v-if="!isValidIcon">{{icon}}</span>
       </v-btn>
     </template>
     <span>{{text | title }}</span>
@@ -45,6 +46,10 @@ export default {
   data: () => ({
     show: false
   }),
-  computed: {}
+  computed: {
+    isValidIcon() {
+      return this.icon.includes("mdi");
+    }
+  }
 };
 </script>

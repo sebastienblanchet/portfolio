@@ -1,4 +1,5 @@
 export default {
   theme: "light",
-  lang: "en"
+  lang: "en",
+  size: "lg"
 }
