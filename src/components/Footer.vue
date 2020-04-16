@@ -10,7 +10,7 @@
       <v-col cols="12" md="4" class="text-center font-weight-bold">
           <IconItem url="https://vuejs.org/v2/guide/" icon="mdi-vuejs" text="vue.js guide" />
           {{ new Date().getFullYear() }} - v{{version}}
-          <span class="secondary--text">{{}}</span>
+          <span class="secondary--text">{{size}}</span>
       </v-col>
       <v-col cols="12" md="4" class="text-center text-md-right">        
         <IconItem @icon-click="invertLang" size="18" :icon="lang" text="invert lang" />
@@ -40,9 +40,13 @@ export default {
   }),
   computed: {
     ...mapGetters([
-      'theme',
-      'lang'
+      "theme",
+      "lang",
+      "size"
     ]),
+    sizeInterface() {
+      return this.$vuetify.breakpoint.name;
+    },
     github: function() {
       return `${this.homepage}/tree/v${this.version}`;
     },
@@ -52,8 +56,9 @@ export default {
   },
   methods: {
     ...mapActions([
-      'editTheme',
-      'editLang'
+      "editTheme",
+      "editLang",
+      "editSize"
     ]),
     invertTheme() {
       // toggle
@@ -74,6 +79,9 @@ export default {
     }
   },
   watch: {
+    sizeInterface(value) {
+      this.editSize(value);
+    },
     lang(value) {
       console.log(`Switched to ${value}`);
     }
