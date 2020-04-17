@@ -1,5 +1,6 @@
 export default {
   theme: "light",
   lang: "en",
-  size: "lg"
+  size: "lg",
+  sect: "about"
 }

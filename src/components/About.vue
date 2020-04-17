@@ -128,8 +128,7 @@ export default {
     }
   },
   methods: {},
-  watch: {
-  }
+  watch: {}
 };
 </script>
 

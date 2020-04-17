@@ -6,7 +6,7 @@
         <v-expansion-panel-header class="headline font-weight-bold">
           <div>
             <v-icon class="ma-2" v-text="sectionDict[str]" style="vertical-align: middle;"></v-icon>
-            <span class="secondary--text" style="vertical-align: middle;">{{title | title}}</span>
+            <span style="vertical-align: middle;">{{title | title}}</span>
           </div>
           <v-spacer />
         </v-expansion-panel-header>

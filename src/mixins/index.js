@@ -4,9 +4,10 @@ import translation from "@/assets/translation.json";
 
 Vue.mixin({
   methods: {
-    translate(lookup) {
-      const d = translation[store.getters.lang];
-      return d[lookup] ? d[lookup] : "NaN";
+    translate(lookup, lang) {
+      lang = lang || store.getters.lang;
+      const d = translation[lang];
+      return d[lookup] ? d[lookup] : lookup;
     }
   }
 })

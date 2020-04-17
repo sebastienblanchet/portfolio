@@ -10,4 +10,8 @@ export default {
   editSize ({ commit }, size) {
     commit('editSize', size);
   },
+
+  editSect ({ commit }, sect) {
+    commit('editSect', sect);
+  }
 }

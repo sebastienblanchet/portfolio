@@ -7,7 +7,11 @@ export default {
     state.theme = theme;
   },
 
-  editSize(state, Size) {
-    state.Size = Size;
+  editSize(state, size) {
+    state.size = size;
+  },
+
+  editSect(state, sect) {
+    state.sect = sect;
   }
 }
