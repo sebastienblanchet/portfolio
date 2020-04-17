@@ -45,6 +45,7 @@
 <script>
 import Dialog from "@/components/ui/Dialog";
 import IconItem from "@/components/ui/IconItem";
+// import SwipeCarousel from "@/components/ui/SwipeCarousel";
 import projects from "@/assets/projects.json";
 
 export default {
@@ -52,6 +53,7 @@ export default {
   components: {
     Dialog,
     IconItem
+    // SwipeCarousel
   },
   data: () => ({
     projects: projects
