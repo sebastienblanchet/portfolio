@@ -94,7 +94,6 @@
           </v-card-text>
           <v-card-actions>
             <v-btn
-              :loading="loading"
               color="success"
               class="ma-2 white--text"
               href="https://github.com/sebastienblanchet/Resume/releases/latest/download/Resume.pdf"
@@ -107,39 +106,29 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col>
-        <v-card class="mx-auto">
-          <v-card-title>Interests</v-card-title>
-          <Interests />
-        </v-card>
-      </v-col>
     </v-row>
   </div>
 </template>
 
 <script>
-import Interests from "@/components/Interests";
 import IconItem from "@/components/ui/IconItem";
 import Goto from "@/components/ui/Goto";
 import { about } from "@/assets/resume.json";
 
 export default {
   components: {
-    Interests,
     IconItem,
     Goto
   },
-  data() {
-    return {
-      loading: false,
-      about: about
-    };
+  data: () => ({
+  }),
+  computed: {
+    about() {
+      return about;
+    }
   },
   methods: {},
   watch: {
-    loader() {
-      this.loading = "mdi-spin";
-    }
   }
 };
 </script>

@@ -19,7 +19,6 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 import About from "@/components/About";
 import Interests from "@/components/Interests";
 import Timeline from "@/components/Timeline";
@@ -28,7 +27,6 @@ import Education from "@/components/Education";
 import Projects from "@/components/Projects";
 import Info from "@/components/Info";
 import { sectionDict } from "@/assets/dictionaries.json";
-// import translation from "@/assets/translation.json";
 
 export default {
   components: {
@@ -46,7 +44,6 @@ export default {
   data: () => ({
     panel: [0, 1],
     sectionDict: sectionDict,
-    title: "",
     dict: {
       about: About,
       interests: Interests,
@@ -57,26 +54,15 @@ export default {
       info: Info
     }
   }),
-  created() {
-    this.setTitle();
-  },
   computed: {
-    ...mapGetters([
-      "lang"
-    ]),
     component: function() {
       return this.dict[this.str];
+    },
+    title() {
+      return this.translate(this.str);
     }
   },
-  methods: {
-    setTitle(){
-      this.title = this.translate(this.str);
-    }
-  },
-  watch: {
-    lang() {
-      this.setTitle();
-    }
-  }
+  methods: {},
+  watch: {}
 };
 </script>

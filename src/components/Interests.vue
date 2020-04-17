@@ -3,7 +3,7 @@
     <v-col v-for="interest in interests" :key="interest" cols="12" md="4">
       <v-row dense>
         <v-col cols="auto mx-5">
-          <v-icon v-text="interestsIcons[interest]"></v-icon>
+          <v-icon v-text="getIcon(interest)"></v-icon>
         </v-col>
         <v-col cols="auto">{{interest}}</v-col>
       </v-row>
@@ -17,8 +17,17 @@ import { interestsIcons } from "@/assets/dictionaries.json";
 
 export default {
   data: () => ({
-    interests: interests,
     interestsIcons: interestsIcons
-  })
+  }),
+  computed: {
+    interests() {
+      return interests;
+    }
+  },
+  methods: {
+    getIcon(interest) {
+      return interestsIcons[interest];
+    }
+  }
 };
 </script>

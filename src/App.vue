@@ -27,7 +27,7 @@ export default {
   },
   data: () => ({
     // define it one here, order matters
-    sections: ["about", "timeline", "skills", "projects", "info"]
+    sections: ["about", "interests", "timeline", "skills", "projects", "info"]
   }),
   created() {
     this.$vuetify.theme.dark = false;

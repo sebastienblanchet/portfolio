@@ -1,10 +1,11 @@
 {
   "langs": {
     "en": "english",
-    "fr": "francais"
+    "fr": "français"
   },
   "en": {
     "about": "about",
+    "interests": "interests",
     "timeline": "timeline",
     "skills": "skills",
     "education": "education",
@@ -31,8 +32,9 @@
     "concepts": "concepts",
     "other": "other"
   },
-  "fr": { 
+  "fr": {
     "about": "moi",
+    "interests": "intérêsts",
     "timeline": "chronologie",
     "skills": "compétences",
     "education": "éducation",

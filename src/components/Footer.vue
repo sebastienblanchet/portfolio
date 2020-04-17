@@ -80,9 +80,6 @@ export default {
   watch: {
     sizeInterface(value) {
       this.editSize(value);
-    },
-    lang(value) {
-      console.log(`Switched to ${value}`);
     }
   }
 };

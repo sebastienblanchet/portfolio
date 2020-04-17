@@ -1,6 +1,7 @@
 {
   "sectionDict": {
     "about": "mdi-human-greeting",
+    "interests": "mdi-head-heart-outline",
     "timeline": "mdi-timeline-text-outline",
     "skills": "mdi-laptop-mac",
     "education": "mdi-school-outline",
