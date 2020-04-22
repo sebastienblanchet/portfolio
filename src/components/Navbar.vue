@@ -26,6 +26,7 @@
         >Portfolio</v-btn>
       </v-toolbar-title>
       <v-spacer></v-spacer>
+      <ThemeInvert />
       <LangSelect />
     </v-app-bar>
   </div>
@@ -33,6 +34,7 @@
 
 <script>
 import SidebarItem from "@/components/ui/SidebarItem";
+import ThemeInvert from "@/components/ui/ThemeInvert";
 import LangSelect from "@/components/ui/LangSelect";
 import { about } from "@/assets/resume.json";
 import { sectionDict } from "@/assets/dictionaries.json";
@@ -43,6 +45,7 @@ export default {
   },
   components: {
     SidebarItem,
+    ThemeInvert,
     LangSelect
   },
   data: () => ({

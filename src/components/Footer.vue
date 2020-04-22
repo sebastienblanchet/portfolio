@@ -13,7 +13,8 @@
       </v-col>
       <v-col cols="12" md="4" class="text-center text-md-right">
         <!-- <IconItem @icon-click="invertLang" size="18" :icon="lang" text="invert lang" /> -->
-        <IconItem @icon-click="invertTheme" size="18" :icon="themeIcon" text="invert theme" />
+        <!-- <IconItem @icon-click="invertTheme" size="18" :icon="themeIcon" text="invert theme" /> -->
+        <IconItem size="18" icon="mdi-information-outline" text="see release notes" />
         <IconItem size="18" :url="github" icon="mdi-code-tags" text="report a bug" />
         <IconItem size="18" :url="bugs" icon="mdi-bug-outline" text="see source code" />
       </v-col>
@@ -34,8 +35,6 @@ export default {
     version: version,
     author: author,
     homepage: homepage,
-    invert: false,
-    themeIcon: "mdi-rotate-45 mdi-moon-waxing-crescent"
   }),
   computed: {
     ...mapGetters([
@@ -58,24 +57,7 @@ export default {
       "editTheme",
       "editLang",
       "editSize"
-    ]),
-    invertTheme() {
-      // toggle
-      this.invert = !this.invert;
-
-      // extract name and theme
-      let name = this.invert ? "dark" : "light";
-      this.themeIcon = name === "dark" ? "mdi-decagram" : "mdi-rotate-45 mdi-moon-waxing-crescent";
-
-      // invert theme and write state
-      this.$vuetify.theme.dark = this.invert;
-      this.editTheme(name);
-    },
-    // invertLang() {
-    //   // toggle language and set
-    //   const l = (this.lang == "en") ? "fr" : "en";
-    //   this.editLang(l);
-    // }
+    ])
   },
   watch: {
     sizeInterface(value) {
