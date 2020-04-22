@@ -98,7 +98,6 @@ import { about, bio } from "@/assets/resume.json";
 export default {
   components: {
     IconItem
-    // Goto
   },
   data: () => ({
   }),

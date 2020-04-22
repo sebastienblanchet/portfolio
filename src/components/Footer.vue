@@ -12,9 +12,16 @@
         {{ new Date().getFullYear() }} - v{{version}}
       </v-col>
       <v-col cols="12" md="4" class="text-center text-md-right">
-        <!-- <IconItem @icon-click="invertLang" size="18" :icon="lang" text="invert lang" /> -->
-        <!-- <IconItem @icon-click="invertTheme" size="18" :icon="themeIcon" text="invert theme" /> -->
-        <IconItem size="18" icon="mdi-information-outline" text="see release notes" />
+            <v-dialog v-model="dialog" max-width="1000">
+      <template v-slot:activator="{ on }">
+        <v-btn text icon v-on="on">
+          <IconItem size="18" icon="mdi-information-outline" text="see release notes" />
+        </v-btn>
+      </template>
+      <v-card>
+        <Info />
+      </v-card>
+      </v-dialog>
         <IconItem size="18" :url="github" icon="mdi-code-tags" text="report a bug" />
         <IconItem size="18" :url="bugs" icon="mdi-bug-outline" text="see source code" />
       </v-col>
@@ -25,16 +32,19 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 import IconItem from "@/components/ui/IconItem";
+import Info from "@/components/Info";
 import { version, author, homepage } from "../../package.json";
 
 export default {
   components: {
-    IconItem
+    IconItem,
+    Info
   },
   data: () => ({
     version: version,
     author: author,
     homepage: homepage,
+    dialog: false
   }),
   computed: {
     ...mapGetters([

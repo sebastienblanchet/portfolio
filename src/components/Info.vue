@@ -9,7 +9,8 @@ import readme from "../../README.md";
 export default {
   name: "Info",
   data: () => ({
-    md: null
+    md: null,
+    dialog: false
   }),
   created() {
     var md = marked(readme);
