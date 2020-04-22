@@ -29,7 +29,7 @@
     "simulation": "simulation",
     "os": "operating system",
     "protocols": "protocols",
-    "devops": "devops",
+    "devops": "devOps",
     "concepts": "concepts",
     "other": "other"
   },
@@ -59,7 +59,7 @@
     "simulation": "simulation",
     "os": "systèmes d'Exploitation",
     "protocols": "protocoles",
-    "devops": "devops",
+    "devops": "devOps",
     "concepts": "concepts",
     "other": "autre"
   }

@@ -10,13 +10,25 @@
     ]
   },
   {
+    "title": "Learning Docker",
+    "img": "li",
+    "url": "https://www.linkedin.com/learning/learning-docker-2",
+    "code": "https://github.com/sebastienblanchet/docker-linkedin-learning/",
+    "download": "https://raw.githubusercontent.com/sebastienblanchet/docker-linkedin-learning/master/Certificate.pdf",
+    "employer": "LinkedIn Learning",
+    "date": "Apr. 2020",
+    "description": [
+      "Learning Docker"
+    ]
+  },
+  {
     "title": "Learning Rails",
     "img": "li",
     "url": "https://www.linkedin.com/learning/ruby-on-rails-6-essential-training",
     "code": "https://github.com/sebastienblanchet/rails-linkedin-learning/",
     "download": "https://raw.githubusercontent.com/sebastienblanchet/rails-linkedin-learning/master/Certificate.pdf",
     "employer": "LinkedIn Learning",
-    "date": "Ongoing",
+    "date": "Apr. 2020",
     "description": [
       "Learning Ruby on Rails"
     ]

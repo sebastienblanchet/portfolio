@@ -52,7 +52,8 @@
       "Express",
       "Vuetify",
       "boost",
-      "GNU"
+      "GNU",
+      "OpenCV"
     ],
     "hardware": [
       "NI",
@@ -94,13 +95,13 @@
       "FTP"
     ],
     "devops": [
-      "Git Bash",
+      "Git",
       "Jenkins",
       "Travis-CI",
       "Atlassian",
       "Trac",
-      "Coverity",
-      "OpenShift"
+      "Docker",
+      "Kubernetes"
     ],
     "concepts": [
       "embedded discrete and optimal control",
@@ -125,15 +126,12 @@
       "VHDL"
     ],
     "other": [
-      "Git",
       "Bash",
       "Vim",
       "JSON",
       "LaTeX",
       "Markdown",
-      "npm",
-      "Jenkins",
-      "Travis-CI"
+      "npm"
     ]
   },
   "education": [{

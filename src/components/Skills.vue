@@ -16,7 +16,7 @@ export default {
     SkillsCard
   },
   data: () => ({
-    sections: ["languages", "frameworks", "libraries", "os", "hardware", "other"]
+    sections: ["languages", "frameworks", "libraries", "os", "hardware", "devops", "other"]
   }),
   computed: {
     skills() {
