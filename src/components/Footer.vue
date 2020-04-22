@@ -11,8 +11,8 @@
         <IconItem url="https://vuejs.org/v2/guide/" icon="mdi-vuejs" text="vue.js guide" />
         {{ new Date().getFullYear() }} - v{{version}}
       </v-col>
-      <v-col cols="12" md="4" class="text-center text-md-right">        
-        <IconItem @icon-click="invertLang" size="18" :icon="lang" text="invert lang" />
+      <v-col cols="12" md="4" class="text-center text-md-right">
+        <!-- <IconItem @icon-click="invertLang" size="18" :icon="lang" text="invert lang" /> -->
         <IconItem @icon-click="invertTheme" size="18" :icon="themeIcon" text="invert theme" />
         <IconItem size="18" :url="github" icon="mdi-code-tags" text="report a bug" />
         <IconItem size="18" :url="bugs" icon="mdi-bug-outline" text="see source code" />
@@ -71,11 +71,11 @@ export default {
       this.$vuetify.theme.dark = this.invert;
       this.editTheme(name);
     },
-    invertLang() {
-      // toggle language and set
-      const l = (this.lang == "en") ? "fr" : "en";
-      this.editLang(l);
-    }
+    // invertLang() {
+    //   // toggle language and set
+    //   const l = (this.lang == "en") ? "fr" : "en";
+    //   this.editLang(l);
+    // }
   },
   watch: {
     sizeInterface(value) {

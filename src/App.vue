@@ -30,7 +30,7 @@ export default {
   },
   data: () => ({
     // define it one here, order matters
-    sections: ["about", "interests", "timeline", "skills", "projects", "info"],
+    sections: ["about", "interests", "timeline", "skills", "projects"],
     offsetTop: 0,
   }),
   created() {
