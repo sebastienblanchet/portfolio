@@ -1,25 +1,50 @@
 {
   "about": {
-    "name": "Sebastien Blanchet",
-    "location": "Montreal, QC, CAN",
-    "email": "s3blanch@edu.uwaterloo.ca",
-    "li": "https://www.linkedin.com/in/sebastien-blanchet/",
-    "git": "https://www.github.com/sebastienblanchet",
-    "stack": "https://www.stackoverflow.com/users/9791070/seb-blanchet",
-    "summary": "Software Engineer"
+    "en": {
+      "name": "Sebastien Blanchet",
+      "location": "Montreal, QC, CAN",
+      "email": "s3blanch@edu.uwaterloo.ca",
+      "li": "https://www.linkedin.com/in/sebastien-blanchet/",
+      "git": "https://www.github.com/sebastienblanchet",
+      "stack": "https://www.stackoverflow.com/users/9791070/seb-blanchet",
+      "summary": "Software Engineer"
+    },
+    "fr": {
+      "name": "Sébastien Blanchet",
+      "location": "Montréal, QC, CAN",
+      "email": "s3blanch@edu.uwaterloo.ca",
+      "li": "https://www.linkedin.com/in/sebastien-blanchet/",
+      "git": "https://www.github.com/sebastienblanchet",
+      "stack": "https://www.stackoverflow.com/users/9791070/seb-blanchet",
+      "summary": "Ingénieur Logiciel"
+    }
   },
-  "interests": [
-    "coffee",
-    "coding",
-    "hockey",
-    "football",
-    "golf",
-    "biking",
-    "tinkering",
-    "electronics",
-    "mechanics",
-    "gaming"
-  ],
+  "interests": {
+    "en": [
+      "coffee",
+      "coding",
+      "hockey",
+      "football",
+      "golf",
+      "biking",
+      "tinkering",
+      "electronics",
+      "mechanics",
+      "gaming"
+    ],
+    "fr": [
+      "café",
+      "codage",
+      "hockey",
+      "football",
+      "golf",
+      "cyclisme",
+      "tinkering",
+      "électronique",
+      "mécanique",
+      "jeux video"
+    ]
+  },
   "skills": {
     "languages": [
       "C",
@@ -134,184 +159,355 @@
       "npm"
     ]
   },
-  "education": [{
-    "id": "uw",
-    "url": "https://www.uwaterloo.ca",
-    "name": "University of Waterloo",
-    "degree": "Bachelor of Applied Science with Distinction",
-    "comment": "Honors Mechanical Engineering Coop, GPA: 3.5/4.0",
-    "start": "Sept. 2013",
-    "end": "Apr. 2019"
-  }],
-  "jobs": [{
-      "id": "pwc",
-      "url": "http://www.pwc.ca",
-      "employer": "Pratt & Whitney Canada",
-      "location": "Montreal, QC, CAN",
-      "title": "Software Engineer",
-      "division": "Test Facilities Computing",
-      "start": "Aug. 2019",
-      "end": "Present",
-      "description": [
-        "Developing EEC communication software with modern web technologies (Node.js, Vue.js, HTML5/CSS3)",
-        "Contributing to multi-threaded C++/C# for CentOS/RHEL Linux server-side applications",
-        "Using internal TCP/UDP sockets programming API to communicate with MySQL/MongoDB databases",
-        "Designing embedded C drivers on RTOS Linux for high-speed EEC data acquisition and processing",
-        "Integrating fully Agile work-flow using Git, Jenkins, various unit and e2e testing frameworks "
-      ],
-      "technologies": [
-        "C",
-        "C++",
-        "C#",
-        "Node.js",
-        "Vue.js",
-        "HTML5/CSS3",
-        "GraphQL"
-      ]
-    },
-    {
-      "id": "tesla",
-      "url": "https://www.tesla.com/",
-      "employer": "Tesla",
-      "location": "Palo Alto, CA, USA",
-      "title": "Firmware Engineering (Coop)",
-      "division": "Energy Products",
-      "start": "Sept. 2018",
-      "end": "Dec. 2018",
-      "description": [
-        "Coded MISRA compliant firmware in C for power electronic controls on embedded system's DSPs and MCUs",
-        "Full-stack exposure: RTOS kernel, serial drivers APIs (CAN, SPI), application-level controls and diagnostics",
-        "Deployed an embedded self-test C framework on multiple ECUs eliminating manual debugging at EOL/field",
-        "Employed a test-driven development mindset by writing C unit tests, SIL/HIL simulations, Pytest regression ",
-        "Assured CI in an Agile environment with Atlassian tools, Git Bash, code review/PR and Jenkins builds",
-        "Employing SCRUM software development with Atlassian tools, Git Bash, code review",
-        "Coding layered architecture CAN, UDS, UDP communication protocols for diagnostics and data transfer between ECUs",
-        "Implementing power electronics control algorithms for industrial inverter, rectifiers"
-      ],
-      "technologies": [
-        "C",
-        "C++",
-        "Python",
-        "HIL",
-        "Git"
-      ]
-    },
-    {
-      "id": "apple",
-      "url": "https://www.apple.com",
-      "employer": "Apple",
-      "location": "Cupertino, CA, USA",
-      "title": "Controls Engineering (Coop)",
-      "division": "Special Projects Group",
-      "start": "Aug. 2017",
-      "end": "Aug. 2018",
-      "description": [
-        "Developed a hardware-in-the-loop system for validation of power electronic control algorithms in C",
-        "Emulated and optimized high-fidelity discrete plant models on 32-bit Xilinx FPGA for low latency micro second control",
-        "Deployed LabVIEW HMI for deterministic communication between PC, PXIe RTOS controller and FPGA",
-        "Flashed microcontroller via JTAG, serial and Ethernet with the latest software builds for bring-up of PCBAs",
-        "Applied DSP theory to convert continuous Simulink filters to discrete firmware in C for data acquisition",
-        "Implemented automated testing Python frameworks for continuous integration and software regression",
-        "Designed system harness to interface HIL and PCBA from electrical schematics and NI hardware datasheets",
-        "Converted continuous time MATLAB/Simulink algorithms to discrete firmware in C FIR",
-        "Applied DSP theory with discrete filters in C for data acquisition (LPF, HPF, BSF, BPF, anti-alias)",
-        "Hardware communication protocols interfaces serial, ethernet, SPI PCIe, I2C, UART, JTAG",
-        "Acquire and generate analog and digital signals, control timing, and implement signal processing on RT and FPGA parallel processing"
-      ],
-      "technologies": [
-        "C",
-        "C++",
-        "LabVIEW",
-        "MATLAB",
-        "Simulink",
-        "Python",
-        "Git"
-      ]
-    },
-    {
-      "id": "altaeros",
-      "url": "http://www.altaeros.com",
-      "employer": "Altaeros",
-      "location": "Boston, MA, USA",
-      "title": "Systems Engineering (Coop)",
-      "division": "R & D",
-      "start": "Jan. 2017",
-      "end": "Apr. 2017",
-      "description": [
-        "Performed numerical analysis in Python on prototype of an autonomous aerostat's electromechanical system",
-        "Utilized electronic lab equipment and LabVIEW HMI to log test data and analyze with MATLAB",
-        "Coordinated with vendors and ControlEng SERVOsoft to size all control system components (servos, VFDs)"
-      ],
-      "technologies": [
-        "Python",
-        "MATLAB",
-        "LabVIEW"
-      ]
-    },
-    {
-      "id": "odi",
-      "url": "https://www.ontariodie.com",
-      "employer": "Ontario Die International",
-      "location": "Waterloo, ON, CAN",
-      "title": "Mechanical Engineering (Coop)",
-      "division": "R & D",
-      "start": "May 2016",
-      "end": "Aug. 2016",
-      "description": [
-        "Designed robotic components (electrical, hydraulic) of PLC/CNC bending systems in SOLIDWORKS",
-        "Improved existing technology by applying lean, DFM and DFA principles to prototyping and research projects",
-        "Automated tedious SOLIDWORKS tasks in VBA and C++ with the API in MS Visual Studio IDE",
-        "Performed hands-on Q&A HMI testing, machined components, fabricated assemblies with power/hand tools"
-      ],
-      "technologies": [
-        "SOLIDWORKS",
-        "C++"
-      ]
-    },
-    {
-      "id": "pwc",
-      "url": "http://www.pwc.ca",
-      "employer": "Pratt & Whitney Canada",
-      "location": "Mississauga, ON, CAN",
-      "title": "Project Management (Coop)",
-      "division": "Turbofan Operations",
-      "start": "Sept. 2015",
-      "end": "Dec. 2015",
-      "description": [
-        "Communicated with the OEM in French to assure delivery of a quality engine while exceeding expectations",
-        "Developed Excel VBA programs allowing for improvements in methods of business metric preparation",
-        "Collaborated with a multi-disciplinary team to develop logistics plans for new design incorporation"
-      ],
-      "technologies": []
-    },
-    {
-      "id": "linamar",
-      "url": "http://www.skyjack.com",
-      "employer": "Linamar",
-      "location": "Guelph, ON, CAN",
-      "title": "Manufacturing Engineering (Coop)",
-      "division": "Skyjack",
-      "start": "Jan. 2015",
-      "end": "Apr. 2015",
-      "description": [
-        "Worked with a team of engineers to troubleshoot production issues at an aerial work platform manufacturer",
-        "Increased process efficiency by organizing assembly stations and designing of jigs/fixtures with SOLIDWORKS"
-      ],
-      "technologies": []
-    },
-    {
-      "id": "norarc",
-      "url": "http://www.norarc.com/en/",
-      "employer": "Nor-Arc",
-      "location": "Earlton, ON, CAN",
-      "title": "Junior Detailer (Coop)",
-      "division": "Steel Fabricators",
-      "start": "June 2014",
-      "end": "Aug. 2014",
-      "description": [
-        "Detailed architectural, mechanical and electrical drawings including GD&T in AutoCAD"
-      ],
-      "technologies": []
-    }
-  ]
+  "education": {
+    "en": [{
+      "id": "uw",
+      "url": "https://www.uwaterloo.ca",
+      "name": "University of Waterloo",
+      "degree": "Bachelor of Applied Science with Distinction",
+      "comment": "Honors Mechanical Engineering Coop, GPA: 3.5/4.0",
+      "start": "Sept. 2013",
+      "end": "Apr. 2019"
+    }],
+    "fr": [{
+      "id": "uw",
+      "url": "https://www.uwaterloo.ca",
+      "name": "Université de Waterloo",
+      "degree": "Baccalauréat en Sciences Appliquées avec Distinction",
+      "comment": "Génie Mécanique/Mécatronique, Co-op, GPA: 3.5/4.0",
+      "start": "sept. 2013",
+      "end": "avril 2019"
+    }]
+  },
+  "jobs": {
+    "en": [{
+        "id": "pwc",
+        "url": "http://www.pwc.ca",
+        "employer": "Pratt & Whitney Canada",
+        "location": "Montreal, QC, CAN",
+        "title": "Software Engineer",
+        "division": "Test Facilities Computing",
+        "start": "Aug. 2019",
+        "end": "Present",
+        "description": [
+          "Developing EEC communication software with modern web technologies (Node.js, Vue.js, HTML5/CSS3)",
+          "Contributing to multi-threaded C++/C# for CentOS/RHEL Linux server-side applications",
+          "Using internal TCP/UDP sockets programming API to communicate with MySQL/MongoDB databases",
+          "Designing embedded C drivers on RTOS Linux for high-speed EEC data acquisition and processing",
+          "Integrating fully Agile work-flow using Git, Jenkins, various unit and e2e testing frameworks "
+        ],
+        "technologies": [
+          "C",
+          "C++",
+          "C#",
+          "Node.js",
+          "Vue.js",
+          "HTML5/CSS3",
+          "GraphQL"
+        ]
+      },
+      {
+        "id": "tesla",
+        "url": "https://www.tesla.com/",
+        "employer": "Tesla",
+        "location": "Palo Alto, CA, USA",
+        "title": "Firmware Engineering (Coop)",
+        "division": "Energy Products",
+        "start": "Sept. 2018",
+        "end": "Dec. 2018",
+        "description": [
+          "Coded MISRA compliant firmware in C for power electronic controls on embedded system's DSPs and MCUs",
+          "Full-stack exposure: RTOS kernel, serial drivers APIs (CAN, SPI), application-level controls and diagnostics",
+          "Deployed an embedded self-test C framework on multiple ECUs eliminating manual debugging at EOL/field",
+          "Employed a test-driven development mindset by writing C unit tests, SIL/HIL simulations, Pytest regression ",
+          "Assured CI in an Agile environment with Atlassian tools, Git Bash, code review/PR and Jenkins builds",
+          "Employing SCRUM software development with Atlassian tools, Git Bash, code review",
+          "Coding layered architecture CAN, UDS, UDP communication protocols for diagnostics and data transfer between ECUs",
+          "Implementing power electronics control algorithms for industrial inverter, rectifiers"
+        ],
+        "technologies": [
+          "C",
+          "C++",
+          "Python",
+          "HIL",
+          "Git"
+        ]
+      },
+      {
+        "id": "apple",
+        "url": "https://www.apple.com",
+        "employer": "Apple",
+        "location": "Cupertino, CA, USA",
+        "title": "Controls Engineering (Coop)",
+        "division": "Special Projects Group",
+        "start": "Aug. 2017",
+        "end": "Aug. 2018",
+        "description": [
+          "Developed a hardware-in-the-loop system for validation of power electronic control algorithms in C",
+          "Emulated and optimized high-fidelity discrete plant models on 32-bit Xilinx FPGA for low latency micro second control",
+          "Deployed LabVIEW HMI for deterministic communication between PC, PXIe RTOS controller and FPGA",
+          "Flashed microcontroller via JTAG, serial and Ethernet with the latest software builds for bring-up of PCBAs",
+          "Applied DSP theory to convert continuous Simulink filters to discrete firmware in C for data acquisition",
+          "Implemented automated testing Python frameworks for continuous integration and software regression",
+          "Designed system harness to interface HIL and PCBA from electrical schematics and NI hardware datasheets",
+          "Converted continuous time MATLAB/Simulink algorithms to discrete firmware in C FIR",
+          "Applied DSP theory with discrete filters in C for data acquisition (LPF, HPF, BSF, BPF, anti-alias)",
+          "Hardware communication protocols interfaces serial, ethernet, SPI PCIe, I2C, UART, JTAG",
+          "Acquire and generate analog and digital signals, control timing, and implement signal processing on RT and FPGA parallel processing"
+        ],
+        "technologies": [
+          "C",
+          "C++",
+          "LabVIEW",
+          "MATLAB",
+          "Simulink",
+          "Python",
+          "Git"
+        ]
+      },
+      {
+        "id": "altaeros",
+        "url": "http://www.altaeros.com",
+        "employer": "Altaeros",
+        "location": "Boston, MA, USA",
+        "title": "Systems Engineering (Coop)",
+        "division": "R & D",
+        "start": "Jan. 2017",
+        "end": "Apr. 2017",
+        "description": [
+          "Performed numerical analysis in Python on prototype of an autonomous aerostat's electromechanical system",
+          "Utilized electronic lab equipment and LabVIEW HMI to log test data and analyze with MATLAB",
+          "Coordinated with vendors and ControlEng SERVOsoft to size all control system components (servos, VFDs)"
+        ],
+        "technologies": [
+          "Python",
+          "MATLAB",
+          "LabVIEW"
+        ]
+      },
+      {
+        "id": "odi",
+        "url": "https://www.ontariodie.com",
+        "employer": "Ontario Die International",
+        "location": "Waterloo, ON, CAN",
+        "title": "Mechanical Engineering (Coop)",
+        "division": "R & D",
+        "start": "May 2016",
+        "end": "Aug. 2016",
+        "description": [
+          "Designed robotic components (electrical, hydraulic) of PLC/CNC bending systems in SOLIDWORKS",
+          "Improved existing technology by applying lean, DFM and DFA principles to prototyping and research projects",
+          "Automated tedious SOLIDWORKS tasks in VBA and C++ with the API in MS Visual Studio IDE",
+          "Performed hands-on Q&A HMI testing, machined components, fabricated assemblies with power/hand tools"
+        ],
+        "technologies": [
+          "SOLIDWORKS",
+          "C++"
+        ]
+      },
+      {
+        "id": "pwc",
+        "url": "http://www.pwc.ca",
+        "employer": "Pratt & Whitney Canada",
+        "location": "Mississauga, ON, CAN",
+        "title": "Project Management (Coop)",
+        "division": "Turbofan Operations",
+        "start": "Sept. 2015",
+        "end": "Dec. 2015",
+        "description": [
+          "Communicated with the OEM in French to assure delivery of a quality engine while exceeding expectations",
+          "Developed Excel VBA programs allowing for improvements in methods of business metric preparation",
+          "Collaborated with a multi-disciplinary team to develop logistics plans for new design incorporation"
+        ],
+        "technologies": []
+      },
+      {
+        "id": "linamar",
+        "url": "http://www.skyjack.com",
+        "employer": "Linamar",
+        "location": "Guelph, ON, CAN",
+        "title": "Manufacturing Engineering (Coop)",
+        "division": "Skyjack",
+        "start": "Jan. 2015",
+        "end": "Apr. 2015",
+        "description": [
+          "Worked with a team of engineers to troubleshoot production issues at an aerial work platform manufacturer",
+          "Increased process efficiency by organizing assembly stations and designing of jigs/fixtures with SOLIDWORKS"
+        ],
+        "technologies": []
+      },
+      {
+        "id": "norarc",
+        "url": "http://www.norarc.com/en/",
+        "employer": "Nor-Arc",
+        "location": "Earlton, ON, CAN",
+        "title": "Junior Detailer (Coop)",
+        "division": "Steel Fabricators",
+        "start": "June 2014",
+        "end": "Aug. 2014",
+        "description": [
+          "Detailed architectural, mechanical and electrical drawings including GD&T in AutoCAD"
+        ],
+        "technologies": []
+      }
+    ],
+    "fr": [{
+        "id": "pwc",
+        "url": "http://www.pwc.ca",
+        "employer": "Pratt & Whitney Canada",
+        "location": "Montréal, QC, CAN",
+        "title": "Ingénieur Logiciel",
+        "division": "Support aux Banc D'essais",
+        "start": "août 2019",
+        "end": "présent",
+        "description": [
+          "Développement de logiciels pour EEC avec technologies web modernes (node.js, Angular, HTML5/CSS3)",
+          "Contribution aux applications back-end multi-threaded en C ++/C# pour CentOS/RHEL Linux",
+          "Utilisation de programmation sockets TCP/UDP pour communiquer avec bases de données MySQL/MongoDB",
+          "Intégration d'un domaine Agile à l'aide de Git, Jenkins et divers cadres de tests unitaire/e2e",
+          "Conception de pilotes en C embarqué sur RTOS Linux pour l'acquisition/traitement de données EEC"
+        ],
+        "technologies": [
+          "C",
+          "C++",
+          "C#",
+          "Node.js",
+          "Vue.js",
+          "HTML5/CSS3",
+          "GraphQL"
+        ]
+      },
+      {
+        "id": "tesla",
+        "url": "https://www.tesla.com/",
+        "employer": "Tesla",
+        "location": "Palo Alto, CA, É-U",
+        "title": "Ingénierie Logiciel (Coop)",
+        "division": "Produits d'Énergie",
+        "start": "sept. 2018",
+        "end": "déc. 2018",
+        "description": [
+          "Coder des micrologiciels en C embarqué pour le contrôle d'électronique de puissance sur les DSP et MCU",
+          "Exposition au paquet entier: RTOS, API pilotes de ports sériel (UDS, CAN, SPI), application et diagnostiques",
+          "Déployer un cadre self-test embarqué C sur plusieurs ECU pour éliminer les efforts manuels au chantier",
+          "Améliorer les outils de génération de code en Java et les test régression avec Python Pytest",
+          "Employer le test-driven development en écrivant des test unitaires, simulations SIL/HIL et régression",
+          "Assurer l'intégration dans un milieu Agile avec les outils Atlassian, Git Bash, revue de code/PR et Jenkins"
+        ],
+        "technologies": [
+          "C",
+          "C++",
+          "Python",
+          "HIL",
+          "Git"
+        ]
+      },
+      {
+        "id": "apple",
+        "url": "https://www.apple.com",
+        "employer": "Apple",
+        "location": "Cupertino, CA, É-U",
+        "title": "Ingénierie Contrôle (Co-op)",
+        "division": "Projets Spéciaux",
+        "start": "août 2017",
+        "end": "août 2018",
+        "description": [
+          "Développer un système HIL pour valider les algorithmes pour le contrôle d'électronique de puissance en C",
+          "émuler et optimiser les modèles d'haute fidélité sur FPGA Xilinx pour le contrôle de faible latence en micro seconde",
+          "Déployer un HMI LabVIEW pour la communication déterministe entre PC, contrôleur RTOS et FPGA",
+          "Flasher le microcontrôleur des PCB par JTAG, ports sériel et Ethernet avec la version récente de logiciel ",
+          "Appliquer la théorie DSP pour convertir des modèles et filtres Simulink au domaine discrèt en C embarqué",
+          "Réaliser un cadre de testage Python automatisé pour l'intégration continuel et la régression du logiciel"
+        ],
+        "technologies": [
+          "C",
+          "C++",
+          "LabVIEW",
+          "MATLAB",
+          "Simulink",
+          "Python",
+          "Git"
+        ]
+      },
+      {
+        "id": "altaeros",
+        "url": "http://www.altaeros.com",
+        "employer": "Altaeros",
+        "location": "Boston, MA, É-U",
+        "title": "Ingénierie Système (Coop)",
+        "division": "R & D",
+        "start": "janv. 2017",
+        "end": "avril 2017",
+        "description": [
+          "Effectuer des analyses numériques en Python pour le système électromécanique d'un aérostat",
+          "Utiliser l'équipment de laboratoire électronique et un HMI LabVIEW pour enregistrer des données de test"
+
+        ],
+        "technologies": [
+          "Python",
+          "MATLAB",
+          "LabVIEW"
+        ]
+      },
+      {
+        "id": "odi",
+        "url": "https://www.ontariodie.com",
+        "employer": "Ontario Die International",
+        "location": "Waterloo, ON, CAN",
+        "title": "Ingénierie Mécanique (Coop)",
+        "division": "R & D",
+        "start": "mai 2016",
+        "end": "août 2016",
+        "description": [
+          "Conçu des composants robotiques (électrique, hydraulique) de systèmes PLC/CNC avec SOLIDWORKS"
+        ],
+        "technologies": [
+          "SOLIDWORKS",
+          "C++"
+        ]
+      },
+      {
+        "id": "pwc",
+        "url": "http://www.pwc.ca",
+        "employer": "Pratt & Whitney Canada",
+        "location": "Mississauga, ON, CAN",
+        "title": "Gestion de Programme (Coop)",
+        "division": "Turbofan Operations",
+        "start": "sept. 2015",
+        "end": "déc. 2015",
+        "description": [
+          "Assurer la livraison à temps des turbosoufflantes en dépassant les attentes et besoins de l'OEM en français"
+        ],
+        "technologies": []
+      },
+      {
+        "id": "linamar",
+        "url": "http://www.skyjack.com",
+        "employer": "Linamar",
+        "location": "Guelph, ON, CAN",
+        "title": "Ingénierie de Fabrication (Coop)",
+        "division": "Skyjack",
+        "start": "janv. 2015",
+        "end": "avril 2015",
+        "description": [
+          "Travailler avec une équipe d'ingénieurs pour dépanner des problèmes sur la ligne de fabrication"
+        ],
+        "technologies": []
+      },
+      {
+        "id": "norarc",
+        "url": "http://www.norarc.com/en/",
+        "employer": "Nor-Arc",
+        "location": "Earlton, ON, CAN",
+        "title": "Junior Detailer (Coop)",
+        "division": "Steel Fabricators",
+        "start": "juin 2014",
+        "end": "août 2014",
+        "description": [
+          "Detailed architectural, mechanical and electrical drawings including GD&T in AutoCAD"
+        ],
+        "technologies": []
+      }
+    ]
+  }
 }

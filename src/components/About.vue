@@ -98,8 +98,8 @@
               class="ma-2 white--text"
               href="https://github.com/sebastienblanchet/Resume/releases/latest/download/Resume.pdf"
             >
-              Resume
-              <v-icon left>mdi-download</v-icon>
+              <v-icon>mdi-download</v-icon>
+              Résumé
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -124,7 +124,7 @@ export default {
   }),
   computed: {
     about() {
-      return about;
+      return about[this.$store.state.lang];
     }
   },
   methods: {},

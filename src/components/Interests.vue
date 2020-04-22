@@ -1,11 +1,11 @@
 <template>
   <v-row dense>
-    <v-col v-for="interest in interests" :key="interest" cols="12" sm="6" md="4" lg="3">
+    <v-col v-for="(interest, index) in interests" :key="interest" cols="12" sm="6" md="4" lg="3">
       <v-row dense>
         <v-col cols="auto mx-5">
-          <v-icon v-text="getIcon(interest)"></v-icon>
+          <v-icon v-text="getIcon(index)"></v-icon>
         </v-col>
-        <v-col cols="auto">{{translate(interest)}}</v-col>
+        <v-col cols="auto">{{interest}}</v-col>
       </v-row>
     </v-col>
   </v-row>
@@ -21,12 +21,12 @@ export default {
   }),
   computed: {
     interests() {
-      return interests;
+      return interests[this.$store.state.lang];
     }
   },
   methods: {
-    getIcon(interest) {
-      const en = this.translate(interest, "en");
+    getIcon(idx) {
+      const en = interests.en[idx];
       return interestsIcons[en];
     }
   }

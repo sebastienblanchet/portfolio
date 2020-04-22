@@ -11,16 +11,6 @@
     "education": "education",
     "projects": "projects",
     "info": "info",
-    "coffee": "coffee",
-    "coding": "coding",
-    "hockey": "hockey",
-    "football": "football",
-    "golf": "golf",
-    "biking": "biking",
-    "tinkering": "tinkering",
-    "electronics": "electronics",
-    "mechanics": "mechanics",
-    "gaming": "gaming",
     "languages": "languages",
     "programming": "programming",
     "frameworks": "frameworks",
@@ -31,7 +21,8 @@
     "protocols": "protocols",
     "devops": "devOps",
     "concepts": "concepts",
-    "other": "other"
+    "other": "other",
+    "see profile": "see profile"
   },
   "fr": {
     "about": "moi",
@@ -41,16 +32,6 @@
     "education": "éducation",
     "projects": "projets",
     "info": "info",
-    "coffee": "café",
-    "coding": "codage",
-    "hockey": "hockey",
-    "football": "football",
-    "golf": "golf",
-    "biking": "cyclisme",
-    "tinkering": "tinkering",
-    "electronics": "électronique",
-    "mechanics": "mécanique",
-    "gaming": "jeu",
     "programming": "programmation",
     "languages": "langages",
     "frameworks": "cadres",
@@ -61,6 +42,7 @@
     "protocols": "protocoles",
     "devops": "devOps",
     "concepts": "concepts",
-    "other": "autre"
+    "other": "autre",
+    "see profile": "voir profil"
   }
 }
