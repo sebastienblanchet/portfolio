@@ -1,6 +1,6 @@
 {
   "en": [{
-      "title": "Portfolio App",
+      "title": "Portfolio Web App ",
       "img": "logo",
       "code": "https://github.com/sebastienblanchet/portfolio/",
       "download": "",
@@ -328,16 +328,114 @@
       ]
     }
   ],
-  "fr": [
-    {
-      "title": "Portfolio App",
+  "fr": [{
+      "title": "Application Web Portfolio",
       "img": "logo",
-      "code": "https://github.com/sebastienblanchet/portfolio/",
-      "download": "",
-      "employer": "Personal",
-      "date": "Ongoing",
+      "employer": "Personel",
+      "date": "En cours",
       "description": [
-        "Showcasing portfolio using full-stack development/DevOps skills on GitHub-pages hosted application"
+        "Présentation de travaux personel avec une application Vue.js deployé par Travis-CI avec GitHub-pages"
+      ]
+    },
+
+    {
+      "title": "Cours Divers",
+      "img": "li",
+      "employer": "LinkedIn Learning",
+      "date": "En cours",
+      "description": [
+        "Couvrant: Vue.js, Node.js, TypeScript, React, MySQL, Ruby, GraphQL"
+      ]
+    },
+
+    {
+      "title": "Contrôleur de Bras Robotique",
+      "img": "uw",
+      "employer": "ECE 488: Contrôle Multi-Variable",
+      "date": "avril 2019",
+      "description": [
+        "Modélisation et contrôle d'un système MIMO non linéaire avec MATLAB en utilisant des méthodes avancées"
+      ]
+    },
+
+    {
+      "title": "Système de Press Chauffée",
+      "img": "uw",
+      "employer": "ME 482: Projet Capstone",
+      "date": "mars 2019",
+      "description": [
+        "Chef des éfforts du système électrique: contrôle de la température et du moteur"
+      ]
+    },
+
+    {
+      "title": "Entraînement d'Application Swift",
+      "img": "apple",
+      "employer": "Apple: Software University",
+      "date": "août 2018",
+      "description": [
+        "Revue des fondamentaux du object oriented programming en Swift et codage d 'un application"
+      ]
+    },
+
+    {
+      "title": "MIT Open Courseware",
+      "img": "mit",
+      "employer": "6.006 Introduction aux Algorithmes",
+      "date": "mai 2018",
+      "description": [
+        "Revue la complexité, algorithmes de tri, graphiques et programmation dynamique avec Python"
+      ]
+    },
+
+    {
+      "title": "Réparation Dune-Buggy",
+      "img": "uw",
+      "employer": "Personnel",
+      "date": "août 2018",
+      "description": [
+        "Diagnostiquer le système d'allumage de carburant et remplacer la bobine et l'armature"
+      ]
+    },
+
+    {
+      "title": "Laboratoire Ballon et Poutre",
+      "img": "uw",
+      "employer": "ECE481: Contrôle Discrèt",
+      "date": "août 2017",
+      "description": [
+        "Design d'un HMI LabVIEW, effectué l'identification, réaliser un contrôleur digitale sur NI cRIO FPGA"
+      ]
+    },
+
+    {
+      "title": "Moniteur d'un Tambour",
+      "img": "wit",
+      "employer": "Personnel: WIT Hackathon",
+      "date": "mars 2017",
+      "description": [
+        "Coder le micrologiciels en C embarqué et communiqué les données par UART avec MATLAB en temps réel"
+      ]
+    },
+
+    {
+      "title": "Actionneur d'éolienne",
+      "img": "uw",
+      "employer": "ME360: Contrôle Analogue",
+      "date": "déc. 2016",
+      "description": [
+        "étudier les réponses du domaine temps/fréquence avec MATLAB pour assurer la stabilité du contrôleur PI"
+      ]
+    },
+
+    {
+      "title": "Contrôle d'un Moteur DC",
+      "img": "uw",
+
+      "employer": "ME360: Contrôle Analogue",
+      "date": "oct. 2016",
+      "description": [
+        "Design d'un contrôleur PID en Simulunk; réaliser en temps réel avec la génération de code C QUARC"
       ]
     }
   ]

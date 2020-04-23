@@ -33,10 +33,11 @@
     "fr": {
       "title": "Bienvenue à mon portfolio!",
       "description": [
-        "",
-        "",
-        "",
-        ""
+        "J'ai codé ce site entièrement avec l'aide de mon nouveau framework préféré Vue.js",
+        "Né et élevé dans une petite communauté bilingue de New Liskeard dans le Nord de l'Ontario, j'ai grandi en réparant (brisant principalement) les quatre-roues et la motoneige de ma famille.",
+        "Cette partie de mes antécédents a joué un grand rôle dans ma motivation à étudier en tant qu 'ingénieur mécanique à l'Université de Waterloo.",
+        "Tout au long de mes études, j'ai été lentement introduit au monde de développement logiciel et j'ai immédiatement développé une passion. Cela est bien évident dans mon parcours, comme on le voit dans la section Chronologie ci-dessous.",
+        "Si vous souhaitez quelque chose d'un peu plus formel, n'hésitez pas à télécharger la dernière version GitHub de mon CV!"
       ]
     }
   },
