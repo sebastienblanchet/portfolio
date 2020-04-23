@@ -66,9 +66,9 @@
       </v-col>
       <v-col cols="mx-auto">
         <v-card class="mx-auto">
-          <v-card-text>
+          <v-card-text class="pb-0">
             <p class="display-1 text--primary">{{bio.title}}</p>
-            <div class="text--primary" v-for="(item, index) in bio.description" :key="index">
+            <div class="my-5 text--primary" v-for="(item, index) in bio.description" :key="index">
               {{item}}
             </div>
           </v-card-text>
@@ -76,10 +76,10 @@
             <v-btn
               color="success"
               class="ma-2 white--text"
-              href="https://github.com/sebastienblanchet/Resume/releases/latest/download/Resume.pdf"
+              :href="resumePath"
             >
               <v-icon>mdi-download</v-icon>
-              Résumé
+              Resume
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -107,6 +107,10 @@ export default {
     },
     bio() {
       return bio[this.$store.state.lang];
+    },
+    resumePath() {
+      const res = (this.$store.state.lang === "en") ? "Resume" : "Resume_fr";
+      return `https://github.com/sebastienblanchet/Resume/releases/latest/download/${res}.pdf`;
     }
   },
   methods: {},

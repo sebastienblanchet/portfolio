@@ -24,19 +24,19 @@
       "title": "Welcome to my portfolio!",
       "description": [
         "I coded this entirely from scratch with the help of my new favorite JavaScript framework/library Vue.js",
-        "If you would like something a little more formal, feel free to download the latest GitHub release of my resume!",
-        "Born and raised from a small billingual community of New Liskeard in Northern Ontario, I grew up fixing (mostly breaking) my family's four-wheelers and snowmachine.",
+        "Born and raised from a small bilingual community of New Liskeard in Northern Ontario, I grew up fixing (mostly breaking) my family's four-wheelers and snow machine.",
         "This part of my background played a large part in my motivation to study as a Mechanical Engineer at the University of Waterloo.",
-        "Throughout the course of my undergrad, I was slowly introduced to the world of software development and immediately developped a passion and this is apparent in my journey as seen in the Timeline section below."
+        "Throughout the course of my undergrad, I was slowly introduced to the world of software development and immediately developed a passion and this is apparent in my journey as seen in the Timeline section below.",
+        "If you would like something a little more formal, feel free to download the latest GitHub release of my resume!"
       ]
     },
     "fr": {
-      "title": "Welcome to my portfolio!",
+      "title": "Bienvenue à mon portfolio!",
       "description": [
-        "One paragara sdaaskldjasjdklajskdjaskdjkasjdkasjda",
-        "One paragara sdaaskldjasjdklajskdjaskdjkasjdkasjda",
-        "One paragara sdaaskldjasjdklajskdjaskdjkasjdkasjda",
-        "One paragara sdaaskldjasjdklajskdjaskdjkasjdkasjda"
+        "",
+        "",
+        "",
+        ""
       ]
     }
   },
@@ -520,12 +520,12 @@
         "url": "http://www.norarc.com/en/",
         "employer": "Nor-Arc",
         "location": "Earlton, ON, CAN",
-        "title": "Junior Detailer (Coop)",
-        "division": "Steel Fabricators",
+        "title": "Détaillant Junior (Coop)",
+        "division": "Fabricants D'acier",
         "start": "juin 2014",
         "end": "août 2014",
         "description": [
-          "Detailed architectural, mechanical and electrical drawings including GD&T in AutoCAD"
+          "Détaillé des dessing technique architecturaux, mécanique et électrique incluant du GD&T avec AutoCAD"
         ],
         "technologies": []
       }

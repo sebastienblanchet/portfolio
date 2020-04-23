@@ -45,6 +45,7 @@
 <script>
 import Dialog from "@/components/ui/Dialog";
 import IconItem from "@/components/ui/IconItem";
+// TODO add projects to swipe
 // import SwipeCarousel from "@/components/ui/SwipeCarousel";
 import projects from "@/assets/projects.json";
 
@@ -55,9 +56,12 @@ export default {
     IconItem
     // SwipeCarousel
   },
-  data: () => ({
-    projects: projects
-  }),
+  data: () => ({}),
+  computed: {
+    projects() {
+      return projects[this.$store.state.lang];
+    }
+  },
   methods: {
     isValid(str) {
       return str ? str.length > 0 : false;
