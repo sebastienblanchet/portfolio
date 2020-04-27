@@ -1,11 +1,12 @@
 {
   "sectionDict": {
-    "About": "mdi-human-greeting",
-    "Timeline": "mdi-timeline-text-outline",
-    "Skills": "mdi-laptop-mac",
-    "Education": "mdi-school-outline",
-    "Projects": "mdi-code-braces",
-    "Info": "mdi-information-outline"
+    "about": "mdi-human-greeting",
+    "interests": "mdi-head-heart-outline",
+    "timeline": "mdi-timeline-text-outline",
+    "skills": "mdi-laptop-mac",
+    "education": "mdi-school-outline",
+    "projects": "mdi-code-braces",
+    "info": "mdi-information-outline"
   },
   "logoDict": {
     "C": "https://cdn.worldvectorlogo.com/logos/c-2975.svg",
@@ -20,7 +21,7 @@
     "MATLAB": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/667px-Matlab_Logo.png",
     "Angular": "https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg",
     "Vue.js": "https://cdn.worldvectorlogo.com/logos/vue-9.svg",
-    "Node.js": "https://cdn.worldvectorlogo.com/logos/nodejs.svg",
+    "Node.js": "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
     ".NET": "https://cdn.worldvectorlogo.com/logos/dot-net-core-7.svg",
     "Rails": "https://cdn.worldvectorlogo.com/logos/rails-1.svg",
     "Laravel": "https://cdn.worldvectorlogo.com/logos/laravel.svg",
@@ -36,6 +37,7 @@
     "Vuetify": "https://cdn.worldvectorlogo.com/logos/vuetify.svg",
     "GNU": "https://cdn.worldvectorlogo.com/logos/gnu.svg",
     "boost": "https://theboostcpplibraries.com/static/main/img/boost-logo.svg",
+    "OpenCV": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/OpenCV_Logo_with_text.png/487px-OpenCV_Logo_with_text.png",
     "Git": "https://cdn.worldvectorlogo.com/logos/git.svg",
     "Bash": "https://cdn.worldvectorlogo.com/logos/bash-1.svg",
     "Vim": "https://cdn.worldvectorlogo.com/logos/vim.svg",
@@ -45,8 +47,12 @@
     "XML": "https://cdn.worldvectorlogo.com/logos/xml.svg",
     "LaTeX": "https://cdn.worldvectorlogo.com/logos/latex.svg",
     "Markdown": "https://cdn.worldvectorlogo.com/logos/markdown.svg",
+    "Atlassian": "https://cdn.worldvectorlogo.com/logos/atlassian-1.svg",
+    "Trac": "https://cdn.worldvectorlogo.com/logos/trac-2.svg",
     "Jenkins": "https://cdn.worldvectorlogo.com/logos/jenkins.svg",
     "Travis-CI": "https://cdn.worldvectorlogo.com/logos/travis-ci.svg",
+    "Docker": "https://cdn.worldvectorlogo.com/logos/docker.svg",
+    "Kubernetes": "https://cdn.worldvectorlogo.com/logos/kubernets.svg",
     "npm": "https://cdn.worldvectorlogo.com/logos/npm.svg",
     "ARM": "https://cdn.worldvectorlogo.com/logos/arm.svg",
     "Texas Instrument": "https://cdn.worldvectorlogo.com/logos/texas-instruments-1.svg",

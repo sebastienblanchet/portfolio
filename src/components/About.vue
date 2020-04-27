@@ -66,81 +66,55 @@
       </v-col>
       <v-col cols="mx-auto">
         <v-card class="mx-auto">
-          <!-- <v-card-title>Message</v-card-title -->
-          <v-card-text>
-            <p class="display-1 text--primary">Welcome to my portofolio!</p>
-            <!-- <p>adjective</p> -->
-            <div class="text--primary">
-              I coded this entirely from scratch with the help of my new favorite JavaScript framework/library
-              <v-avatar class="mx-1 my-1" color="white" tile size="24">
-                <v-img text src="@/assets/img/logo.png"></v-img>
-              </v-avatar>
-              <b>Vue.js</b>
+          <v-card-text class="pb-0">
+            <p class="display-1 text--primary">{{bio.title}}</p>
+            <div class="my-5 text--primary" v-for="(item, index) in bio.description" :key="index">
+              {{item}}
             </div>
-          </v-card-text>
-          <!-- TODO sell yourself some more -->
-          <v-card-text>
-            <div class="text--primary">
-              Born and raised from a small billingual community of New Liskeard in Northern Ontario, I grew up fixing (mostly breaking) my family's four-wheelers and snowmachine.
-              This part of my background played a large part in my motivation to study as a Mechanical Engineer at the University of Waterloo.
-              Throughout the course of my undergrad, I was slowly introduced to the world of software development and immediately developped a passion and this is apparent in my journey as seen in the
-              <Goto section="Timeline" />section below.
-            </div>
-          </v-card-text>
-          <v-card-text>
-            <div
-              class="text--primary"
-            >If you would like something a little more formal, feel free to download the latest GitHub release of my resume!</div>
           </v-card-text>
           <v-card-actions>
             <v-btn
-              :loading="loading"
               color="success"
               class="ma-2 white--text"
-              href="https://github.com/sebastienblanchet/Resume/releases/latest/download/Resume.pdf"
+              :href="resumePath"
             >
+              <v-icon>mdi-download</v-icon>
               Resume
-              <v-icon left>mdi-download</v-icon>
             </v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
     </v-row>
     <v-row>
-      <v-col>
-        <v-card class="mx-auto">
-          <v-card-title>Interests</v-card-title>
-          <Interests />
-        </v-card>
-      </v-col>
     </v-row>
   </div>
 </template>
 
 <script>
-import Interests from "@/components/Interests";
 import IconItem from "@/components/ui/IconItem";
-import Goto from "@/components/ui/Goto";
-import { about } from "@/assets/resume.json";
+// import Goto from "@/components/ui/Goto";
+import { about, bio } from "@/assets/resume.json";
 
 export default {
   components: {
-    Interests,
-    IconItem,
-    Goto
+    IconItem
   },
-  data() {
-    return {
-      loading: false,
-      about: about
-    };
+  data: () => ({
+  }),
+  computed: {
+    about() {
+      return about[this.$store.state.lang];
+    },
+    bio() {
+      return bio[this.$store.state.lang];
+    },
+    resumePath() {
+      const res = (this.$store.state.lang === "en") ? "Resume" : "Resume_fr";
+      return `https://github.com/sebastienblanchet/Resume/releases/latest/download/${res}.pdf`;
+    }
   },
   methods: {},
-  watch: {
-    loader() {
-      this.loading = "mdi-spin";
-    }
-  }
+  watch: {}
 };
 </script>
 

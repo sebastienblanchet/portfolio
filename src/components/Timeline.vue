@@ -24,18 +24,19 @@
 <script>
 import TimelineItem from "@/components/ui/TimelineItem";
 import IconItem from "@/components/ui/IconItem";
-// import Dialog from "@/components/ui/Dialog";
 import { jobs } from "@/assets/resume.json";
 
 export default {
   components: {
     IconItem,
     TimelineItem
-    // Dialog
   },
-  data: () => ({
-    jobs: jobs
-  }),
+  data: () => ({}),
+  computed: {
+    jobs() {
+      return jobs[this.$store.state.lang];
+    }
+  },
   methods: {
     getGoogleMaps(str) {
       // regex to replace spaces with + for map query

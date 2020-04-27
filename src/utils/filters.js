@@ -7,3 +7,7 @@ Vue.filter('arr2Csv', function (arr) {
 Vue.filter('title', function (str) {
   return str.replace(/(^\w|\s\w)/g, m => m.toUpperCase());
 })
+
+Vue.filter('translate', function (str) {
+  return this.translate(str);
+})

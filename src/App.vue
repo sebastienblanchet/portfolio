@@ -4,12 +4,15 @@
 
     <v-content>
       <v-container fluid>
-        <div v-for="section in sections" :key="section">
+        <!-- id="scroll-target"
+          v-scroll:#scroll-target="onScroll" -->
+        <div
+          v-for="section in sections"
+          :key="section">
           <Section :str="section" />
         </div>
       </v-container>
     </v-content>
-
     <Footer />
   </v-app>
 </template>
@@ -27,10 +30,16 @@ export default {
   },
   data: () => ({
     // define it one here, order matters
-    sections: ["About", "Timeline", "Skills", "Projects", "Info"]
+    sections: ["about", "interests", "timeline", "skills", "projects"],
+    offsetTop: 0,
   }),
   created() {
     this.$vuetify.theme.dark = false;
+  },
+  methods: {
+    onScroll (e) {
+      this.offsetTop = e.target.scrollTop;
+    }
   }
 };
 </script>

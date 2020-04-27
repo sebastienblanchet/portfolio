@@ -1,18 +1,17 @@
-export const increment = ({ commit }) => {
-  commit('increment')
-}
-export const decrement = ({ commit }) => {
-  commit('decrement')
-}
+export default {
+  editLang ({ commit }, lang) {
+    commit('editLang', lang);
+  },
 
-export const incrementIfOdd = ({ commit, state }) => {
-  if ((state.count + 1) % 2 === 0) {
-    commit('increment')
+  editTheme ({ commit }, theme) {
+    commit('editTheme', theme);
+  },
+
+  editSize ({ commit }, size) {
+    commit('editSize', size);
+  },
+
+  editSect ({ commit }, sect) {
+    commit('editSect', sect);
   }
-}
-
-export const incrementAsync = ({ commit }) => {
-  setTimeout(() => {
-    commit('increment')
-  }, 1000)
 }

@@ -5,7 +5,7 @@
       <v-icon bold v-text="icon"></v-icon>
     </v-list-item-action>
     <v-list-item-content>
-      <v-list-item-title>{{section}}</v-list-item-title>
+      <v-list-item-title>{{translated | title}}</v-list-item-title>
     </v-list-item-content>
   </v-list-item>
 </template>
@@ -18,8 +18,11 @@ export default {
   },
   computed: {
     // dynamic url for section heading
-    url: function() {
+    url() {
       return `#${this.section}`;
+    },
+    translated() {
+      return this.translate(this.section);
     }
   },
   methods: {

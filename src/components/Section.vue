@@ -6,7 +6,7 @@
         <v-expansion-panel-header class="headline font-weight-bold">
           <div>
             <v-icon class="ma-2" v-text="sectionDict[str]" style="vertical-align: middle;"></v-icon>
-            <span class="secondary--text" style="vertical-align: middle;">{{str}}</span>
+            <span style="vertical-align: middle;">{{title | title}}</span>
           </div>
           <v-spacer />
         </v-expansion-panel-header>
@@ -38,27 +38,31 @@ export default {
     Projects,
     Info
   },
+  props: {
+    str: String
+  },
   data: () => ({
     panel: [0, 1],
     sectionDict: sectionDict,
     dict: {
-      About: About,
-      Interests: Interests,
-      Timeline: Timeline,
-      Skills: Skills,
-      Education: Education,
-      Projects: Projects,
-      Info: Info
+      about: About,
+      interests: Interests,
+      timeline: Timeline,
+      skills: Skills,
+      education: Education,
+      projects: Projects,
+      info: Info
     }
   }),
-  props: {
-    str: String
-  },
   computed: {
     component: function() {
       return this.dict[this.str];
+    },
+    title() {
+      return this.translate(this.str);
     }
   },
-  methods: {}
+  methods: {},
+  watch: {}
 };
 </script>

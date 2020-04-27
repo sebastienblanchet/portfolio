@@ -1,9 +1,17 @@
-export const increment = state => {
-  state.count++
-  state.history.push('increment')
-}
+export default {
+  editLang(state, lang) {
+    state.lang = lang;
+  },
 
-export const decrement = state => {
-  state.count--
-  state.history.push('decrement')
+  editTheme(state, theme) {
+    state.theme = theme;
+  },
+
+  editSize(state, size) {
+    state.size = size;
+  },
+
+  editSect(state, sect) {
+    state.sect = sect;
+  }
 }

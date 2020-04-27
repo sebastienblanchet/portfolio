@@ -15,8 +15,6 @@
         </div>
       </v-list>
     </v-navigation-drawer>
-
-    <!-- TO ADD IMG -->
     <v-app-bar app clipped-left dark color="primary">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title id="top">
@@ -28,15 +26,16 @@
         >Portfolio</v-btn>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <!-- <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>-->
+      <ThemeInvert />
+      <LangSelect />
     </v-app-bar>
   </div>
 </template>
 
 <script>
 import SidebarItem from "@/components/ui/SidebarItem";
+import ThemeInvert from "@/components/ui/ThemeInvert";
+import LangSelect from "@/components/ui/LangSelect";
 import { about } from "@/assets/resume.json";
 import { sectionDict } from "@/assets/dictionaries.json";
 
@@ -45,17 +44,24 @@ export default {
     sections: Array
   },
   components: {
-    SidebarItem
+    SidebarItem,
+    ThemeInvert,
+    LangSelect
   },
   data: () => ({
     drawer: null,
-    sectionDict: sectionDict,
-    about: about
+    sectionDict: sectionDict
   }),
+  computed: {
+    about() {
+      return about[this.$store.state.lang];
+    }
+  },
   methods: {
     goHome() {
       this.$vuetify.goTo("#top");
     }
-  }
+  },
+
 };
 </script>

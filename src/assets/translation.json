@@ -1,0 +1,48 @@
+{
+  "langs": {
+    "en": "english",
+    "fr": "français"
+  },
+  "en": {
+    "about": "about",
+    "interests": "interests",
+    "timeline": "timeline",
+    "skills": "skills",
+    "education": "education",
+    "projects": "projects",
+    "info": "info",
+    "languages": "languages",
+    "programming": "programming",
+    "frameworks": "technologies",
+    "libraries": "libraries",
+    "hardware": "hardware",
+    "simulation": "simulation",
+    "os": "operating system",
+    "protocols": "protocols",
+    "devops": "devOps",
+    "concepts": "concepts",
+    "other": "other",
+    "see profile": "see profile"
+  },
+  "fr": {
+    "about": "moi",
+    "interests": "intérêsts",
+    "timeline": "chronologie",
+    "skills": "compétences",
+    "education": "éducation",
+    "projects": "projets",
+    "info": "info",
+    "programming": "programmation",
+    "languages": "langages",
+    "frameworks": "technologies",
+    "libraries": "libraries",
+    "hardware": "hardware",
+    "simulation": "simulation",
+    "os": "systèmes d'Exploitation",
+    "protocols": "protocoles",
+    "devops": "devOps",
+    "concepts": "concepts",
+    "other": "autre",
+    "see profile": "voir profil"
+  }
+}
