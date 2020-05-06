@@ -4,8 +4,10 @@
       <template v-slot:activator="{ on }">
         <v-btn text v-on="on" style="text-transform:none !important;">
           <v-icon left>mdi-translate</v-icon>
-          {{langs[$store.state.lang] | title}}
-          <v-icon small right>mdi-chevron-down</v-icon>
+          <div v-if="!$store.isMobile">
+            {{langs[$store.state.lang] | title}}
+            <v-icon small right>mdi-chevron-down</v-icon>
+          </div>
         </v-btn>
       </template>
       <v-list>
@@ -24,10 +26,24 @@ import { langs } from "@/assets/translation.json";
 export default {
   data: () => ({
     langs: langs,
-    selected : "en"
+    selected: ""
   }),
+  beforeMount() {
+    this.editLang(this.getNavigatorLanguage());
+  },
   methods: {
     ...mapActions(["editTheme", "editLang", "editSize"]),
+    getNavigatorLanguage() {
+      const src =
+        navigator.languages && navigator.languages.length
+          ? navigator.languages[0]
+          : navigator.userLanguage ||
+            navigator.language ||
+            navigator.browserLanguage ||
+            "en";
+      const lang = src.substring(0, 2);
+      return lang;
+    }
   },
   watch: {
     selected(value) {
