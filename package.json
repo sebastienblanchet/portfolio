@@ -20,7 +20,7 @@
     "lodash": "^4.17.15",
     "marked": "^0.8.2",
     "vue": "^2.6.11",
-    "vuetify": "^2.2.23",
+    "vuetify": "^2.2.25",
     "vuex": "^3.1.3"
   },
   "devDependencies": {
@@ -36,7 +36,7 @@
     "raw-loader": "^4.0.0",
     "vue-cli-plugin-vuetify": "~2.0.5",
     "vue-template-compiler": "^2.6.11",
-    "vuetify": "^2.2.19"
+    "vuetify": "^2.2.25"
   },
   "eslintConfig": {
     "root": true,
