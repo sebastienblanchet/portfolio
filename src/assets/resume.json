@@ -72,14 +72,16 @@
       "C",
       "C++",
       "C#",
-      "JavaScript(ES6)",
+      "JavaScript",
       "TypeScript",
       "Python",
-      "Ruby",
       "MATLAB",
       "HTML5",
       "CSS3",
-      "GraphQL"
+      "GraphQL",
+      "Ruby",
+      "Golang",
+      "Rust"
     ],
     "frameworks": [
       "Angular",
@@ -100,7 +102,10 @@
       "Vuetify",
       "boost",
       "GNU",
-      "OpenCV"
+      "OpenCV",
+      "OpenCL",
+      "OpenGL",
+      "WebGL"
     ],
     "hardware": [
       "NI",
@@ -213,8 +218,9 @@
         "end": "Present",
         "description": [
           "Developing EEC communication software with modern web technologies (Node.js, Vue.js, HTML5/CSS3)",
-          "Contributing to multi-threaded C++/C# for CentOS/RHEL Linux server-side applications",
-          "Using internal TCP/UDP sockets programming API to communicate with MySQL/MongoDB databases",
+          "TODO: Assuring scalability and maintainability with Docker/Kuberteness",
+          "Contributing to multi-threaded C++,C#,Rust,Golang server-side applications for CentOS/RHEL Linux",
+          "Using internal TCP/UDP sockets programming API to communicate with MySQL and MongoDB databases",
           "Designing embedded C drivers on RTOS Linux for high-speed EEC data acquisition and processing",
           "Integrating fully Agile work-flow using Git, Jenkins, various unit and e2e testing frameworks "
         ],
@@ -241,7 +247,7 @@
           "Coded MISRA compliant firmware in C for power electronic controls on embedded system's DSPs and MCUs",
           "Full-stack exposure: RTOS kernel, serial drivers APIs (CAN, SPI), application-level controls and diagnostics",
           "Deployed an embedded self-test C framework on multiple ECUs eliminating manual debugging at EOL/field",
-          "Employed a test-driven development mindset by writing C unit tests, SIL/HIL simulations, Pytest regression ",
+          "Employed a test-driven development mindset by writing C unit tests, SIL/HIL simulations, Pytest and Golang regression ",
           "Assured CI in an Agile environment with Atlassian tools, Git Bash, code review/PR and Jenkins builds",
           "Employing SCRUM software development with Atlassian tools, Git Bash, code review",
           "Coding layered architecture CAN, UDS, UDP communication protocols for diagnostics and data transfer between ECUs",
@@ -251,6 +257,7 @@
           "C",
           "C++",
           "Python",
+          "Golang",
           "HIL",
           "Git"
         ]

@@ -3,9 +3,11 @@
     <v-menu offset-y>
       <template v-slot:activator="{ on }">
         <v-btn text v-on="on" style="text-transform:none !important;">
-          <v-icon left>mdi-translate</v-icon>
-          {{langs[$store.state.lang] | title}}
-          <v-icon small right>mdi-chevron-down</v-icon>
+          <v-icon :left="!$vuetify.breakpoint.smAndDown">mdi-translate</v-icon>
+          <div v-if="!$vuetify.breakpoint.smAndDown">
+            {{langs[$store.state.lang] | title}}
+            <v-icon small right>mdi-chevron-down</v-icon>
+          </div>
         </v-btn>
       </template>
       <v-list>
@@ -20,14 +22,29 @@
 <script>
 import { mapActions } from "vuex";
 import { langs } from "@/assets/translation.json";
-
 export default {
   data: () => ({
     langs: langs,
-    selected : "en"
+    selected: ""
   }),
+  beforeMount() {
+    // will propogate and edit state
+    this.selected = this.getNavigatorLanguage();
+  },
+  computed: {},
   methods: {
     ...mapActions(["editTheme", "editLang", "editSize"]),
+    getNavigatorLanguage() {
+      const src =
+        navigator.languages && navigator.languages.length
+          ? navigator.languages[0]
+          : navigator.userLanguage ||
+            navigator.language ||
+            navigator.browserLanguage ||
+            "en";
+      const lang = src.substring(0, 2);
+      return lang;
+    }
   },
   watch: {
     selected(value) {

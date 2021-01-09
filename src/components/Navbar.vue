@@ -33,6 +33,7 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
 import SidebarItem from "@/components/ui/SidebarItem";
 import ThemeInvert from "@/components/ui/ThemeInvert";
 import LangSelect from "@/components/ui/LangSelect";
@@ -58,10 +59,10 @@ export default {
     }
   },
   methods: {
+    ...mapActions(["getNavigatorLanguage"]),
     goHome() {
       this.$vuetify.goTo("#top");
     }
-  },
-
+  }
 };
 </script>

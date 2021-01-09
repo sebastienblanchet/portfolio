@@ -5,12 +5,8 @@
     <v-content>
       <v-container fluid>
         <!-- id="scroll-target"
-          v-scroll:#scroll-target="onScroll" -->
-        <div
-          v-for="section in sections"
-          :key="section">
-          <Section :str="section" />
-        </div>
+        v-scroll:#scroll-target="onScroll"-->
+        <router-view />
       </v-container>
     </v-content>
     <Footer />
@@ -18,26 +14,24 @@
 </template>
 
 <script>
-import Section from "@/components/Section";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export default {
   components: {
     Navbar,
-    Section,
     Footer
   },
   data: () => ({
-    // define it one here, order matters
-    sections: ["about", "interests", "timeline", "skills", "projects"],
     offsetTop: 0,
+    // TODO
+    sections: ["about", "interests", "timeline", "skills", "projects"]
   }),
   created() {
     this.$vuetify.theme.dark = false;
   },
   methods: {
-    onScroll (e) {
+    onScroll(e) {
       this.offsetTop = e.target.scrollTop;
     }
   }

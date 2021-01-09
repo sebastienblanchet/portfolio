@@ -1,17 +1,25 @@
 export default {
-  editLang ({ commit }, lang) {
+  editLang({
+    commit
+  }, lang) {
     commit('editLang', lang);
   },
 
-  editTheme ({ commit }, theme) {
+  editTheme({
+    commit
+  }, theme) {
     commit('editTheme', theme);
   },
 
-  editSize ({ commit }, size) {
+  editSize({
+    commit
+  }, size) {
     commit('editSize', size);
   },
 
-  editSect ({ commit }, sect) {
+  editSect({
+    commit
+  }, sect) {
     commit('editSect', sect);
   }
 }
