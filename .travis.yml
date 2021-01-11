@@ -9,7 +9,7 @@ branches:
 
 cache: npm
 
-script: npm run build
+script: npm install && npm run build
 
 deploy:
   provider: pages
