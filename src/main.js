@@ -5,13 +5,11 @@ import vuetify from "@/plugins/vuetify";
 import "@/mixins/index"
 import "@/utils/filters";
 import "@babel/polyfill"
-import router from './router'
 
 Vue.config.productionTip = false
 
 new Vue({
   vuetify,
   store,
-  router,
   render: h => h(App)
 }).$mount("#app")
