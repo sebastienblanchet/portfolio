@@ -15,7 +15,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "core-js": "^3.6.4",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.20",
     "marked": "^0.8.2",
     "vue": "^2.6.11",
     "vuetify": "^2.2.23",
